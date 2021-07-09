@@ -12,14 +12,149 @@
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title> How To Create Handicap In Just 5 Steps </title>
+
+  <style>
+    #photo {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+    #full {
+        margin-top: -20%;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    #item-container {
+    position: relative;
+    top:0%;
+    left:0%;
+    overflow: hidden;
+    }
+
+    .item {
+       /* transition: filter 200ms ease;  */
+        cursor: pointer;
+        transition: transform 200ms ease;
+        animation: itemmove 2s infinite;
+    }
+
+    @keyframes itemmove {
+    0%   { filter: drop-shadow(0px 0px 1px #ee5637);}
+    50%  { filter: drop-shadow(0px 0px 10px #ee5637);}
+    100% { filter: drop-shadow(0px 0px 5px #ee5637);}
+    }
+
+    .item:hover {
+        transform: scale(1.03);
+    }
+
+    #bag {
+        width:14%;
+        height: auto;
+        position: absolute;
+        top: 41%;
+        left: 0%;
+    }
+
+    #stair {
+        width:21%;
+        height: auto;
+        position: absolute;
+        top: 39.5%;
+        left: 54%;
+    }
+    #um {
+        width:8%;
+        height: auto;
+        position: absolute;
+        top: 23.5%;
+        left: 82.1%;
+    }
+
+    #can {
+        width:3.6%;
+        height: auto;
+        position: absolute;
+        top: 41%;
+        left: 92.9%;
+    }
+
+    #question {
+        font-family: 'Lora', serif;
+        font-size: 1.5em;
+        font-style: italic;
+        color: #2a5dcb;
+        position:absolute;
+        top: 8%;
+        width: 100%;
+        text-align: center;
+    }
+
+    #instruction {
+        font-family: 'Be Vietnam', sans-serif;
+        font-size: 0.8 em;
+        color: #2a5dcb;
+        opacity: 0.5;
+        position:absolute;
+        top: 20%;
+        width: 100%;
+        text-align: center;
+    }
+    .hint {
+        display: none;
+        position:absolute;
+        width: 10%;
+        font-family: 'Be Vietnam', sans-serif;
+        font-size: 1 em ;
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 25px;
+    }
+    #hint-bag{
+        position: absolute;
+        top: 41%;
+        left: 12%;
+    }
+    #hint-trash{
+        position: absolute;
+        top: 41%;
+        left: 80%;
+    }
+    #hint-stair{
+        position: absolute;
+        background-color: rgb(255,255,255,0.7);
+        top: 30%;
+        left: 54%;
+    }
+    #expand {
+        position:absolute;
+        width: 100px;
+        height:auto;
+        bottom: 2%;
+        left: 47%;
+    }
+    
+
+</style>
 </head>
 <body>
 
-    <nav>    
-        <a href="../../onboarding/index.html" id="home"><span>Design Errands</span></a>
-        <a href="#"> About </a>
-        <a href="#"> See all essays </a>
-      </nav>
+    <div id="nav"> </div>
+
+    <div id="photo">
+    <div id="item-container">
+    <p id="question"> Wow...what a nice day in Abu Dhabi. <br> But can you see the atrocity in this photo?</p>
+    <p id="instruction"> click on objects in the photo </p>
+    <img id="full" src="data/02_rotana-steps.jpeg">
+        <img class="item" id="bag" src="data/02_bag.png"> <span class="hint" id="hint-bag">Francesca's bag is abnormally big. But it's tolerable</span>
+        <img class="item" id="stair" src="data/02_stair.png"> <span class="hint" id="hint-stair"> The deliberate choice of the architect of this brand new beach resort to prefer steps to a ramp </span>
+        <img class="item" id="can" src="data/02_trash-can.png"><span class="hint" id="hint-trash">Not the best trash can we admit. But not too bad</span>
+        <img id="expand" src="data/expand.svg">
+    </div>
+    </div>
 
     <div id="title-container" class="title-container">
         <p class="title"> How To Create Handicap In Just 5 Steps </p>
@@ -28,18 +163,18 @@
     </div>
 
     <div class="main-text">
-        <p> Generally speaking, people see handicap or disability as a set of personal conditions—such as an illness or injury—that prevents someone to do the things that other people do. Designers know this is not true: handicap or disability is a product of a condition and of the environment. In the photo below, taken in a luxury hotel in Saadiyat Beach, Abu Dhabi, what prevents people with reduced mobility to enjoy access to the beach is not their condition but the deliberate choice of the architect of this brand new beach resort to prefer steps to a ramp. Nothing else. A person on a wheelchair would easily reach the beach, should a gentle ramp be there, instead of those steps. Blind people would reach the beach by themselves should a tactile path be there; and elderly people too, had a handrail been installed. And so on. This is not a photo of a lovely resort. This is bad design and we should train ourselves to spot it as often as possible.  
-            <br>
+        <p> Generally speaking, people see handicap or disability as a set of personal conditions—such as an illness or injury—that prevents someone to do the things that other people do. <em> Designers know this is not true: handicap or disability is a product of a condition and of the environment. </em> In the photo below, taken in a luxury hotel in Saadiyat Beach, Abu Dhabi, what prevents people with reduced mobility to enjoy access to the beach is not their condition but the deliberate choice of the architect of this brand new beach resort to prefer steps to a ramp. Nothing else. A person on a wheelchair would easily reach the beach, should a gentle ramp be there, instead of those steps. Blind people would reach the beach by themselves should a tactile path be there; and elderly people too, had a handrail been installed. And so on. This is not a photo of a lovely resort. This is bad design and we should train ourselves to spot it as often as possible.
+        </p>
             <img class="img-in-text" src="data/02_rotana-steps.jpeg">
-            <br><br>
-            Awareness seems to be the key: few weeks after having posted the above on our blog – advertised also via social media – the hotel where the photo had been taken sent the following note:
-            <br><br>
-            <span class="box-text">Dear Goffredo, Greetings from Rotana! Thank you very much for your concern, which we truly appreciate and acknowledge. Please be informed that we are already looking into modifying the beach access and this will be implemented very soon. Kindest regards, the Rotana team
-            </span>
-            <br>
-            And indeed they kept their word and modify the ramp. While they deserve to be congratulated on this effort in remediation, as designers we cannot help noticing that an even better solution exists, as aptly demonstrated by the footbridge of the adjacent public beach where a gentle ramp takes the whole space. As a rule of thumb, next time you see a ramp next to a set of stairs, ask yourself if those steps were needed in the first place.
-            <br><br>
-            <img class="img-in-text" src="data/02_rotana-ramp.jpg">
+        <p>Awareness seems to be the key: few weeks after having posted the above on our blog – advertised also via social media – the hotel where the photo had been taken sent the following note:
+        </p>
+        <span class="box-text">Dear Goffredo, Greetings from Rotana! Thank you very much for your concern, which we truly appreciate and acknowledge. Please be informed that we are already looking into modifying the beach access and this will be implemented very soon. Kindest regards, the Rotana team
+        </span>
+        <br>
+        <p>And indeed they kept their word and modify the ramp. While they deserve to be congratulated on this effort in remediation, as designers we cannot help noticing that an even better solution exists, as aptly demonstrated by the footbridge of the adjacent public beach where a gentle ramp takes the whole space. As a rule of thumb, next time you see a ramp next to a set of stairs, ask yourself if those steps were needed in the first place.
+        </p>
+        <img class="img-in-text" src="data/02_rotana-ramp.jpg">
+
 
         </p>            
     </div>
@@ -65,5 +200,30 @@
         Please resize your browser for a better experience
     </div>
     <script src="../essay-script.js"> </script>
+
+    <!-- Script for hints here -->
+    <script>
+    let itemCol;
+    let hintCol;
+    let items;
+    let hints;
+
+    itemCol = document.getElementsByClassName("item");
+    hintCol = document.getElementsByClassName("hint");
+
+    items = Array.prototype.slice.call( itemCol );
+    hints = Array.prototype.slice.call( hintCol );
+
+    for (let i=0; i<items.length; i++) { 
+    items[i].addEventListener("click", function(){
+        hints[i].style.display = "block";
+    });
+    items[i].addEventListener("mouseout", function(){
+        hints[i].style.display = "none";
+    });
+}
+
+
+    </script>
 </body>
 </html>

@@ -2,9 +2,39 @@
 $function-font:    'Be Vietnam', sans-serif;
 $text-font: 'Lora', serif;
 
+img { 
+        -webkit-user-drag: none; 
+        -khtml-user-drag: none; 
+        -moz-user-drag: none; 
+        -o-user-drag: none; 
+      }
+
 body {
     margin: 0;
     background-color: #fff6ed;
+    font-family: $text-font;
+
+}
+
+a {
+        color:black;
+} 
+
+
+h2 {
+        font-family: $text-font;
+        font-weight: 700;  
+        margin-left: -10%;
+}
+
+h3 {
+        font-family: $text-font;
+        font-weight: 700;  
+        text-align: center;
+}
+
+strong {
+        font-weight: 700;
 }
 
 nav { 
@@ -31,6 +61,27 @@ a:hover {
    }
 
 }
+
+.button {
+        
+        cursor: pointer;
+        border-radius: 18px;
+        border: 2px solid #2a5dcb;
+        color: #2a5dcb;
+        padding-left: 7px;
+        padding-right: 7px;
+        padding-bottom: 5px;
+        padding-top: 3px;
+        transition: 200ms ease;
+}
+
+
+.button:hover {
+        color: #fff6ed;
+        background-color: #2a5dcb;
+      }
+
+
     
 #home {
     font-family: 'Lora', serif;
@@ -91,7 +142,7 @@ a:hover {
 
 
 .main-text {
-        margin-top: 2%;        
+        margin-top: 5%;        
         margin-bottom: 5%;
         margin-left: 30%;
         margin-right: 30%;
@@ -108,7 +159,9 @@ a:hover {
         color: #fff6ed;
         background-color: #2a5dcb;
         width: 80%;
-        font-size: 0.8em;
+        font-family: $text-font;
+        font-size: 1em;
+        line-height: 27px;
         margin-left: -10%;
         padding: 2%;
         border-radius: 10px;
@@ -118,9 +171,6 @@ a:hover {
  text-decoration: underline;
 }
 
-.cite:hover {
-        cursor: pointer;
-}
 
 .ref {
         opacity: 1 ;
@@ -140,6 +190,29 @@ a:hover {
 .img-in-text {
         width: 100%;
 }
+
+.blue-box {
+        background-color: #2a5dcb;
+        color: #fff6ed;
+        border-radius: 5px;
+}
+
+.org-box {
+        background-color: #ee5637;
+        color: #fff6ed;
+        border-radius: 5px;
+}
+
+.design-type   {
+        background-color:#ffc600;
+        font-family: $function-font;
+        padding-left: 2px;
+        padding-right: 2px;
+
+        // border: 1px solid black;
+        border-radius: 10px;
+}
+
 
 .footer {
         position: relative;

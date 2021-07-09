@@ -1,3 +1,8 @@
+$(function(){
+    $("#nav").load("../navigation.html"); 
+  });
+
+
 let footerBoxprev;
 let arrowLeft;
 let footerBoxnext;

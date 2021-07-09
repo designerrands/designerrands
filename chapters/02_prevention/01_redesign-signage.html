@@ -12,14 +12,51 @@
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title> Can We Kindly Redesign All the Signage Systems in the World, Please? </title>
+  <style>
+      #intro {
+          position: relative;
+          width:100vw;
+          height: 100vh;
+          background-color: #ffc600;
+      }
+
+      #question {
+          font-family: 'Lora', serif;
+          font-size: 2em;
+          text-align: center;
+          margin: 0;
+          padding-top: 5%;
+      }
+
+      .font{
+          width: 90%;
+          height:auto;
+          margin-left:5%;
+          margin-top: 5%;
+          transition: 200ms ease-in;
+      }
+
+      .font:hover {
+          filter: invert(1);
+      }
+
+      #four-letters{
+        font-family: 'Be Vietnam', sans-serif;
+        font-size: 2em;
+      }
+
+  </style>
 </head>
 <body>
 
-    <nav>    
-        <a href="../../onboarding/index.html" id="home"><span>Design Errands</span></a>
-        <a href="#"> About </a>
-        <a href="#"> See all essays </a>
-      </nav>
+    <div id="nav"> </div>
+
+    <div id="intro">
+        <p id="question"> Which looks more beautiful to you? </p>
+        <img class="font" src="data/01_univers-04.svg">
+        <img class="font" src="data/01_dyslexic-03.svg">
+    </div>
+
 
     <div id="title-container" class="title-container">
         <p class="title"> Can We Kindly Redesign All the Signage Systems in the World, Please? </p>
@@ -28,21 +65,38 @@
     </div>
 
     <div class="main-text">
-        <p> Before asking what design is, we are asking how design works. That is, how are design products interpreted by mind like ours. That a reasonably good and workable theory of the mechanics of the mind is needed is the consequence of the fact that if you do not have a theory of how the mind works, you are likely to have a theory, and the latter is invariably a kind of blank slate account. <span class="cite" id="cite1"> Blank slate theories </span> <span class="ref" id="ref1"> Pinker </span> claim that your mind is a sheet of wax, totally virgin and undifferentiated at birth, and that experience will write on the wax, leaving traces that constitute your mental makeup.  
+        <h2>There are more people affected by dyslexia than people on wheelchairs, after all</h2>
+        <p>More and more research indicates that there are specific features that make a typeface difficult to read by people with dyslexia. It is a very tricky matter and the research is far from being conclusive on the topic; readability seems to be affected quite substantially by cultural norms and education: basically we read better the typefaces we are most used to. But there are specific features in the design of typefaces – we are talking here about the Latin alphabet – that are indeed problematic per se. Especially relevant is the case of those sans serif typefaces where letters such as
+        </p>
+        <h3 id="four-letters">b, p, q, d </h3>
+        <p>are made out of one shape only, flipped and rotated.
             <br><br>
-            Today we know that things are more complicated, and we also know how much more complicated they are, but here we can make a very long story relatively short. A few theoretical results of recent cognitive science are particularly important for a discussion about design and its reception.  
+            This parsimony of design has been in use for decades – the reasons are to be found in the cost of casting metal types – and it became a hallmark of distinction: sans serif typefaces set in this way have been praised for their simplicity, their elegance and purity: the more similar the glyphs, the more elegant the whole typeface results. Alphabets created in this spirit, such as Frutiger, became the paradigm for signage systems worldwide in the last fifty years.
             <br><br>
-            The first is that perceptual systems build objects out of pieces that are found in the perceptual scene, and that they do it following their own logic, without listening much to other systems such as memory or the conceptual system. For instance, vision creates three objects, Head, Tail and Box, with the black pixels and the outline in the scene on the right. 
+            Now, there is consensus that these features might actually be a nuisance for dyslexic readers and there is no gentle way to put it: similarities in the shapes of the letters make the text more difficult to read. Hence, new typefaces have been redesigned with the specific goal of avoiding identical shapes among letters. 
             <br><br>
-            However, if you see Head and Tail move and get placed at the two sides of Box, so that their boundaries are aligned on the two sides, you will instantly see a complete but overstretched horse. Now consider: you never saw a Stretched Horse before, and you always saw non-stretched horses; you know that such an animal is biologically impossible (it would have trouble in negotiating turns); you further remember that it was built under your eyes by moving around Head and Tail; all of the above, but no matter what, still you cannot but see an overstretched horse partially occluded by Box when you are confronted with the scene. This means that vision has its own rules for deciding what is an object and what it is not, and ignores what other systems know or may think they know. 
+            Goffredo: “When, during a lecture on wayfinding,  I displayed an alphabet in a typeface specifically designed for dyslexic readers next to an alphabet set in Frutiger I said something about the former looking to me like an eyesore and the latter being more beautiful, proportioned, aesthetically pleasing. These remarks were interpreted as passionate complaints about the fact that aesthetic values were ignored in the design of the typefaces for dyslexics. That was not the case and this is the crucial point that must be clarified: I stated – and sadly I think I will be saying it again and again for the rest of my life! – that the Frutiger typeface looks indeed so much more beautiful than OpenDyslexic typeface to me. Yes, I appreciate I might have said that very passionately: on a recent trip to Berlin I took more photos of the Metro signs – set in Transit, a beautiful Frutiger condensed type – than of the Pergamon Altar. Yes, I do consider that quest to simplicity a testament of the grandeur of so many type masters of the last decades, and yes, I can stare at those lowercases in awe for days. And, finally: yes, those letters look nothing but perfect to me.”
             <br><br>
-            The visual system in a sense is super smart, as it makes sense of complex scenes by simplifying them, in another sense it is super stubborn, as it cannot be corrected by what we know or think we know. Stubbornness is not bad in most contexts, as the important thing for the visual system is not to give a scientifically accurate representation of reality, but to react quickly with approximate representations that in turn make quick actions possible. This implies that the system will misfire in many contexts, in particular in non-natural contexts such as those created by humans. So it is important to understand that the rules for visually assembling objects are not what we think. 
+            But.
             <br><br>
-            <span class="box-text"> What are these rules? <span class="cite"> We still do not know completely. </span><span class="ref"> D. Hofmman, Visual Intelligence. P. Tse. Casati and Cavanagh, The visual world of shadows</span> You may think that the dominating rule for the stretched horse is “build an occlude object if you spot boundary alignment on the two sides of the occlusion”, and this surely will work fine in many occasions, but not in others. 
-                Research is still ongoing.
-             </span>
+            But if it turns out that recent research is sound, and that those features are indeed an impediment to a more universal fruition of the text, then all those typefaces should be banned from any signage system, until redesigned accordingly. And again, there is no way to put it mildly: when we talk about wayfinding, when we talk about visual design and typography, do we want our designs to be accessible, yes or no? Would we condone non-inclusive contemporary architecture? Would we approve of a new building inaccessible by people on a wheelchair? We can still appreciate the exquisite elegance of the Spanish Steps in Rome – built in 1725 – 
             <br><br>
-        </p>            
+            <img class="img-in-text" src="data/01_spanish-steps.jpg"> <span class="ref"> Image Credit: Paolo Margari </span> 
+            <br><br>
+            but we know that nowadays we would have built it as a gentle slope without a single step. We can still be moved by the exquisite beauty of the series of stairs that so effectively created a path from the steep hill of Trinità de’ Monti to Piazza di Spagna, and there is no change of design politics that will prevent those steps to remain the most perfect background for a tourist’s selfie. But we know that that architectural solution would not be approved today, as it impossible to be accessed by people with reduced mobility. When non accessible solutions are implemented, remediation is nowadays mandatory and costly as you will see in the next article.
+            <br><br>
+            So, do we mean that the overwhelming majority of wayfinding systems in place nowadays are wrong? Yes. Of course, they are wrong. If the research is right, the overall majority (and by a rapid guess, we are talking about the 99.9% of wayfinding systems in the West) of signage should be redone.
+            <br><br>
+            Do we mean that they should all be redesigned, taking users with dyslexia into account? Again: Yes. Of course. We should not allow any sign to be unnecessarily difficult to read, any more than we allow a mall or a car park to be unnecessarily difficult to access. There is after all way more dyslexic people than people using wheelchairs.
+            <br><br>
+            <em> Do you mean to say that typefaces such as Johnston Underground, Frutiger, Transit – to name but three of the most exquisite sans serifs ever designed – should not be used anymore?</em> 
+            <br><br>
+            I am afraid we do. There is no contradiction here; just the acknowledgment of scientific and social progress. We now know what makes those typefaces not ideal and we should simply acknowledge this; after all they were created with the intention to solve problems, to be inclusive. Now that we know that this is not the case, we have to act accordingly. 
+            <br><br>
+            That does not mean they are not beautiful anymore. They are and they will always be. And just like a trip to Rome will inspire generations of architects, so the identical shapes of the beautifully designed lowercase d p q and b of many sans serif typefaces will continue to inspire generations of designers. But their time as preferred choice for signage systems is over. And it is our duty to make this happen sooner than later.
+            
+        </p>
+        
     </div>
 
     <!-- <span class="ref" id="ref1"> Mandala book; Casati Lezione del freddo </span> -->

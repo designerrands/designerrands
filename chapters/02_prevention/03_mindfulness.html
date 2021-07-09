@@ -12,14 +12,66 @@
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title> Design Is About Mindfulness </title>
+  <style>
+      .scene-container {
+          display: flex;
+      }
+      .scene {
+          position: relative;
+          width:50%;
+          height: 90vh;
+          margin-top: 5%;
+      }
+
+      #scene1 {
+        border-right: 1px solid black;
+      }
+      .scene1-text {
+        font-size: 20px;
+        line-height: 27px;
+        padding: 5%;
+      }
+      .scene1-img {
+          padding-left: 20%;
+          height:auto;
+          margin:auto;
+      }
+
+      .button-container {
+          position: relative;
+      }
+    
+
+      #next-button{
+          font-family: 'Be Vietnam', sans-serif;
+          font-size: 1.2em;
+          position: absolute;
+          top: 5%;
+          right: 47%;
+      }
+      #prev-button {
+        font-family: 'Be Vietnam', sans-serif;
+        position: absolute;
+          font-size: 1.2em;
+          top: 5%;
+          left: 47%;
+      }
+
+      .scene2-text {
+        font-size: 20px;
+        line-height: 27px;
+        padding: 5%;
+      }
+      .scene2-img {
+        padding-left: 20%;
+          height:auto;
+          margin:auto;
+      }
+  </style>
 </head>
 <body>
 
-    <nav>    
-        <a href="../../onboarding/index.html" id="home"><span>Design Errands</span></a>
-        <a href="#"> About </a>
-        <a href="#"> See all essays </a>
-      </nav>
+    <div id="nav"> </div>
 
     <div id="title-container" class="title-container">
         <p class="title"> Design Is About Mindfulness </p>
@@ -27,20 +79,35 @@
         <div class="icon-container"><img src="data/3.svg" alt="icon of an eyeball" class="icon"></div>
     </div>
 
-    <div class="main-text">
-        <p> Generally speaking, people see handicap or disability as a set of personal conditions—such as an illness or injury—that prevents someone to do the things that other people do. Designers know this is not true: handicap or disability is a product of a condition and of the environment. In the photo below, taken in a luxury hotel in Saadiyat Beach, Abu Dhabi, what prevents people with reduced mobility to enjoy access to the beach is not their condition but the deliberate choice of the architect of this brand new beach resort to prefer steps to a ramp. Nothing else. A person on a wheelchair would easily reach the beach, should a gentle ramp be there, instead of those steps. Blind people would reach the beach by themselves should a tactile path be there; and elderly people too, had a handrail been installed. And so on. This is not a photo of a lovely resort. This is bad design and we should train ourselves to spot it as often as possible.  
-            <br>
-            <img class="img-in-text" src="data/02_rotana-steps.jpeg">
-            <br><br>
-            Awareness seems to be the key: few weeks after having posted the above on our blog – advertised also via social media – the hotel where the photo had been taken sent the following note:
-            <br><br>
-            <span class="box-text">Dear Goffredo, Greetings from Rotana! Thank you very much for your concern, which we truly appreciate and acknowledge. Please be informed that we are already looking into modifying the beach access and this will be implemented very soon. Kindest regards, the Rotana team
-            </span>
-            <br>
-            And indeed they kept their word and modify the ramp. While they deserve to be congratulated on this effort in remediation, as designers we cannot help noticing that an even better solution exists, as aptly demonstrated by the footbridge of the adjacent public beach where a gentle ramp takes the whole space. As a rule of thumb, next time you see a ramp next to a set of stairs, ask yourself if those steps were needed in the first place.
-            <br><br>
-            <img class="img-in-text" src="data/02_rotana-ramp.jpg">
+<div class="scene-container">
 
+    <div class="scene" id="scene1">
+        <p class="scene1-text">“Imagine a situation in which an elderly woman
+            is able to live independently. She typically shops for
+            her groceries every few days. </p> 
+        <img class="scene1-img" src="data/1.png">
+
+    </div>
+
+    <div class="scene" id="scene2">
+        <p class="scene2-text"></p> 
+        <img class="scene2-img" src="">
+    </div>
+</div>
+
+<div class="button-container">
+    <span class="button" id="prev-button"> <-  </span>
+    <span class="button"  id="next-button"> -> </span>
+</div>
+
+
+    <!-- <div class="click"> some random text </div>
+    <img class="photo" src="data/1.png"> -->
+
+
+
+    <div id="main-text" class="main-text">
+        <p> 
         </p>            
     </div>
 
@@ -64,6 +131,107 @@
     <div class="screen-resize">
         Please resize your browser for a better experience
     </div>
+
     <script src="../essay-script.js"> </script>
+    <script>
+        let counter = 0    ;
+
+        $('#next-button').click(function() {
+            counter++;
+            console.log(counter);
+            changeImage();
+
+        });
+
+        $('#prev-button').click(function() {
+            counter--;
+            console.log(counter);
+            changeImage();
+        });
+
+    function changeImage() {
+        if (counter==0) {
+            $('.scene1-img').fadeOut(300, function(){
+            $(this).attr('src','data/1.png').fadeIn(300);
+            $(this).width('35%');
+            $('.scene1-text').html('Imagine a situation in which an elderly woman is able to live independently. She typically shops for her groceries every few days.').fadeIn(300);
+        });
+        } else if (counter==1) {
+            $('.scene1-img').fadeOut(300, function(){
+            $(this).attr('src','data/2.png').fadeIn(300);
+            $(this).width('35%');
+            $('.scene1-text').html('When she arrives at her apartment door, she puts down the grocery bag, ... ').fadeIn(300);
+        });
+        } 
+        else if (counter==2) {
+            $('.scene1-img').fadeOut(300, function(){
+            $(this).attr('src','data/3.png').fadeIn(300);
+            $(this).width('35%');
+            $('.scene1-text').html('... searches for her key, opens the door, ....').fadeIn(300);
+        });
+        } else if (counter==3) {
+            $('.scene1-img').fadeOut(300, function(){
+            $(this).attr('src','data/4.png').fadeIn(300);
+            $(this).width('60%');
+            $('.scene1-text').html('and then bends down to pick up the bag and carries it inside. ').fadeIn(300);
+        });
+        } 
+        else if (counter==4) {
+            $('.scene1-img').fadeOut(300, function(){
+            $(this).attr('src','').fadeIn(300);
+            $(this).width('35%');
+            $('.scene1-text').html('Today, however, is different.').fadeIn(300);
+        });
+        } 
+        else if (counter==5) {
+            $('.scene1-img').fadeOut(300, function(){
+            $(this).attr('src','data/2.1.png').fadeIn(300);
+            $(this).width('45%');
+            $('.scene1-text').html('She puts the bag down but can’t bend over far enough to pick it up. Luckily, a neighbor happens to help her, but the problem persists. If she can’t get her groceries home, she is no longer able to take care of herself. Her adult children, fearing for her diminished state, help her move to a nursing home.').fadeIn(300);
+        });
+        } 
+        else if (counter==6) {
+            $('.scene2-img').fadeOut(300, function(){
+            $(this).attr('src','').fadeIn(300);
+            $(this).width('45%');
+            $('.scene2-text').html('Now consider this scenario.').fadeIn(300);
+        });
+        } 
+        else if (counter==7) {
+            $('.scene2-img').fadeOut(300, function(){
+            $(this).attr('src','data/3.1.png').fadeIn(300);
+            $(this).width('50%');
+            $('.scene2-text').html(' An elderly woman living independently comes back to her apartment with her groceries. ').fadeIn(300);
+        });
+        } 
+        else if (counter==8) {
+            $('.scene2-img').fadeOut(300, function(){
+            $(this).attr('src','data/3.2.png').fadeIn(300);
+            $(this).width('50%');
+            $('.scene2-text').html('She places the bag on a small shelf outside her door, ... ').fadeIn(300);
+        });
+        } 
+        else if (counter==9) {
+            $('.scene2-img').fadeOut(300, function(){
+            $(this).attr('src','data/3.3.png').fadeIn(300);
+            $(this).width('50%');
+            $('.scene2-text').html('searches for her keys, opens the door, ...').fadeIn(300);
+        });
+        } 
+        else if (counter==10) {
+            $('.scene2-img').fadeOut(300, function(){
+            $(this).attr('src','data/3.4.png').fadeIn(300);
+            $(this).width('60%');
+            $('.scene2-text').html('and carries in her grocery bag. <br><br> In the first case, the woman is considered too frail to care for herself, but not in the latter. The only difference is a small piece of wood serving as a shelf.”').fadeIn(300);
+        });
+        } 
+        else if (counter==11) {
+            $('.main-text>p').html('<h3>“The only difference is a small piece of wood.”</h3> <br><br>Chapter 5 "Reengineering medical rules" of Langer’s book <span class="ref">Ellen Langer, Counterclockwise. New York, Ballantine Books.</span> should be mandatory reading in design curricula. <br><br>Design makes a huge difference in those borderline cases in which a single, microscopic step takes you from being considered as healthy to being treated medically. And the key to design is mindfulness.').fadeIn(300);
+            $("html, body").animate({ scrollTop: $("#main-text").offset().top }, 1000);
+        };
+    }
+
+
+    </script>
 </body>
 </html>
