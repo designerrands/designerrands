@@ -1,0 +1,443 @@
+body {
+    margin: 0;
+    background-color: #f85299;
+}
+
+img { 
+    -webkit-user-drag: none; 
+    -khtml-user-drag: none; 
+    -moz-user-drag: none; 
+    -o-user-drag: none; 
+    /* user-drag: none;  */
+  }
+
+
+.background-grid {
+    position: fixed;
+    width: 2000px;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: -1000;
+}
+
+nav { 
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    font-family: 'Be Vietnam', sans-serif;
+    padding-right: 2%;
+    padding-top: 1%;
+    z-index: 1000;
+}
+
+nav a {
+    color:black;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.title-container {
+    position: relative;
+}
+
+#note {
+    position: relative;
+    top: 60px;
+    left: 30px;
+    width: 25%;
+}
+
+.note-container {
+    position: relative;
+}
+
+.note-container p {
+    position: absolute;
+    width: 20%;
+    top: 30%;
+    left: 6%;
+    font-family: 'Lora', serif;
+    color: #ffc600;
+    font-size: 2vw;
+
+}
+
+.icon-container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top:0;
+    overflow: hidden;
+}
+
+.icon-container a {
+    text-decoration: none;
+    color:black;
+}
+
+.background-container {
+    position: relative;
+    top:-10%;
+    left:0%;
+    overflow: hidden;
+
+}
+
+#background {
+    position: relative;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    z-index: -1000;
+}
+
+.icon {
+    width: 60%;
+    height: auto;
+    filter: drop-shadow(5px 5px 2px rgb(152, 152, 152, 0.5))
+}
+
+.icon:hover {
+    transform: translate(-5px,-5px);
+    transition: 300ms;
+    transition-timing-function: ease-out;
+}
+
+.essay-title {
+    font-family: 'Be Vietnam', sans-serif;
+    min-width: 200px;
+    padding: 5%;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: absolute;
+    display: none;
+    z-index: 1010;
+}
+
+#essay1 {
+    position:absolute;
+    width: 10%;
+    top: 36%;
+    left: 12%;
+}
+
+/* #essay-title1 {
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 100px;
+} */
+
+#essay2 {
+    position:absolute;
+    width: 9%;
+    top: 33%;
+    left: 23%;
+}
+
+#essay3 {
+    position:absolute;
+    width: 10%;
+    top: 10%;
+    left: 41%;
+}
+
+
+#essay4 {
+    position:absolute;
+    width: 10%;
+    top: 18%;
+    left:50%;
+}
+
+#essay5 {
+    position:absolute;
+    width: 10%;
+    top: 30%;
+    left:55%;
+}
+
+#essay6 {
+    position:absolute;
+    width: 10%;
+    top: 23%;
+    left: 64%;
+}
+
+#essay7 {
+    position:absolute;
+    width: 10%;
+    top: 45%;
+    left: 63%;
+}
+
+#inside-window2 {
+    position :absolute;
+    width: 17.6%;
+    height: 35%;
+    top:30%;
+    left: 69.5%;
+    /* border: 1px solid black; */
+    overflow: hidden;
+}
+
+#essay8 {
+    position:absolute;
+    width: 60%;
+    top: 5%;
+    left: 72%;
+}
+
+#essay-title8 {
+    position: absolute;
+    width: 20%;
+    margin-top: 0;
+    margin-left: -150px;
+}
+
+#essay9 {
+    position:absolute;
+    width: 60%;
+    top: 11%;
+    left: 14%;
+}
+
+#essay10 {
+    position:absolute;
+    width: 60%;
+    top: 50%;
+    left: 40%;
+}
+
+#essay-title10{
+    margin-top: -200px;
+    margin-left: -50px;
+}
+
+#essay11 {
+    position:absolute;
+    width: 60%;
+    bottom: 1%;
+    left: -10%;
+}
+
+#essay-title11 {
+    margin-top: -200px;
+    margin-left: 50px;
+}
+
+#essay12 {
+    position:absolute;
+    width: 60%;
+    bottom: 1%;
+    left: 80%;
+}
+
+#essay-title12 {
+    margin-top: -100px;
+    margin-left: -230px;
+}
+
+/* start of window  */
+
+#inside-window1 {
+    position :absolute;
+    width: 26%;
+    height: 27%;
+    bottom: 1%;
+    left: 11%;
+    /* border: 1px solid black; */
+    overflow: hidden;
+}
+
+
+#essay13 {
+    position:absolute;
+    width: 40%;
+    top: -8%;
+    left: 2%;
+}
+
+
+#essay14 {
+    position:absolute;
+    width: 40%;
+    top: 54%;
+    left: 48.5%;
+}
+
+#essay-title14 {
+    margin-top: -200px;
+}
+
+
+#essay15 {
+    position:absolute;
+    width: 40%;
+    top: -3%;
+    left: 65%;
+}
+
+
+#essay16 {
+    position:absolute;
+    width: 40%;
+    top: 45%;
+    left: 5%;
+}
+
+#essay-title16 {
+    margin-top: -200px;
+}
+
+
+
+#essay17 {
+    position:absolute;
+    width: 40%;
+    top: 12%;
+    left: 35%;
+}
+
+/* end of window  */
+
+
+#essay18 {
+    position:absolute;
+    width: 10%;
+    bottom: 20%;
+    left: 70%;
+}
+
+
+#essay19 {
+    position:absolute;
+    width: 10%;
+    bottom: 15%;
+    left: 50%;
+}
+
+
+#essay20 {
+    position:absolute;
+    width: 10%;
+    bottom: 25%;
+    left: 80%;
+}
+
+
+#essay21 {
+    position:absolute;
+    width: 10%;
+    bottom: 20%;
+    left: 90%;
+}
+
+#essay-title21 {
+    margin-left: -50px;
+}
+
+
+#essay22 {
+    position:absolute;
+    width: 10%;
+    bottom: 7%;
+    left: 40%;
+}
+
+#essay-title22 {
+    margin-top: -220px;
+}
+
+
+#essay23 {
+    position:absolute;
+    width: 10%;
+    bottom: 10%;
+    left: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.arrow:hover {
+    filter: drop-shadow(5px, 5px, 2px, #333);
+    transition: 300ms;
+    transition-timing-function: ease-out;
+}
+
+.arrow {
+    position: relative;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 1.2em;
+    color: #fff6ed;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.arrow img {
+    filter: invert(1);
+    padding: 10px;
+}
+
+.arrow p {
+    /* position: absolute;
+    margin: auto; */
+    margin: 0;
+    text-align: center;
+}
+
+#leftArrow {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#leftArrow:hover {
+    transform: translate(-5px,-5px);
+}
+
+#rightArrow {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#rightArrow:hover {
+    transform: translate(5px,-5px);
+
+}
+
