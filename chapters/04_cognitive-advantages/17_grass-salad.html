@@ -16,35 +16,87 @@
       rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <script src="p5-sketch.js"></script>
+
+    <style>
+      #desirepathCanvas {
+        position: relative;
+        cursor: url("data/17_cursor.png"), auto;
+      }
+      #showAnswerbutton {
+        position: absolute;
+        top: 90%;
+        left: 45%;
+      }
+    </style>
     <title>Mind the grass, not the salad</title>
   </head>
+
   <body>
     <div id="nav"></div>
 
     <div id="title-container" class="title-container">
       <p class="title">Mind the grass, not the salad</p>
-      <a href="index.html" class="chapter"> Chapter 4: Cognitive advantages (aka no other theory is as powerful)	 </a>
+      <a href="index.html" class="chapter">
+        Chapter 4: Cognitive advantages (aka no other theory is as powerful)
+      </a>
       <div class="icon-container"><img src="data/17.svg" class="icon" /></div>
     </div>
 
     <div class="main-text">
-      <img class="img-in-text" src="#" />
-      <span class="credit">Lefkada, Aug 3, 2017. Image credit: RC.</span>
+      <h2>The concept of ‘desire path’ is crucial in wayfinding studies.</h2>
       <p>
-        Your customer did not come to Greece just for the sun and the food and
-        the wonderful hospitality. They came also for the views and the
-        post-card like (or Instagram-selfie-fit experience). Prototypical Greek
-        houses are not beige with brown blinds, they are white with blue blinds.
-        Why not give them what they expect? <br /><br />
-        Similarly the image of the famous Jumeirah Etihad Towers hotel in Abu
-        Dhabi displays a photo of how the place might have looked like, if only
-        they did not build two additional hotels immediately next to them.
+        Desire paths, also known as paths of least resistance, are the paths
+        created when people walk the same ground wearing down the grass – or
+        leaving any other form of erosion on the surface. They are fundamental
+        features to study as they indicate the preferred (almost always the
+        shortest) route between an origin and destination. Their emergence is
+        the implicit indicator of insufficient planning. In the replication of a
+        famous internet meme below, a desire path is shown to represent the
+        crucial difference between Design and User Experience.
       </p>
 
-      <img class="img-in-text" src="#" />
-    </div>
+      <img class="img-in-text" src="data/17_desire-path.png" />
+      <span class="credit"
+        ><a href="https://www.flickr.com/photos/wetwebwork/2847766967"
+          >Original image by wetwebwork on Flickr</a
+        >
+      </span>
 
-    <!-- <span class="ref" id="ref1"> Mandala book; Casati Lezione del freddo </span> -->
+      <p>
+        In the design of the paths crossing gardens and connecting buildings on
+        university campuses, the preferred protocol is now to wait and observe
+        for one year to see the natural emergence of desire paths and then pave
+        them the following year. Such implementation happened at UC Berkeley and
+        University of Maryland and in many other public spaces around the world.
+      </p>
+
+      <p style="color: #ee5637; text-align: center">
+        Drag mouse to draw your own desire path
+      </p>
+      <div id="desirepathCanvas"></div>
+
+      <p>
+        Students of the Wayfinding Class at NYUAD monitored our new campus on
+        Saadiyat Island and proposed new paved routes following both the
+        observation of people’s behavior, and the creative instances of remedial
+        design put in place to contain that.
+      </p>
+
+      <p style="padding-right: 40%;">
+        Some students, obviously shocked by the fact that people preferred to
+        walk through the grass rather than walk around it, left a paper note
+        next to the path:
+      </p>
+      <p><em>Please, don’t kill me! Signed: The Grass.
+       </em> </p>
+
+      <p style="text-align: right; padding-left: 40%;">It should be noted that maintaining a batch of grass in a campus in Abu Dhabi is way more complicated that it is in Oxford or Boston; so some emotion in seeing this precious feature being eroded is understandable. Still, the rebuttal that followed is exemplary. Another note, placed next to the previous one, stated:</p>
+      <p style="text-align: right; padding-left: 40%;"><em>Killing the grass it’s nothing. I am on my way to the canteen: come and see what I do to the salad.
+      </em></p>
+        <!-- <img class="img-in-text" src="#" /> -->
+    </div>
 
     <div class="footer" id="footer">
       <a href="16_no-smoking-signs.html" id="prev">
@@ -57,9 +109,7 @@
 
       <a href="#" id="next">
         <p>Next Essay</p>
-        <p class="footer-title-next">
-          Let's start talking about restrooms        
-        </p>
+        <p class="footer-title-next">Let's start talking about restrooms</p>
         <img src="../arrow-right.svg" class="footer-arrow" id="arrow-right" />
       </a>
     </div>
