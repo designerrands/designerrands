@@ -191,7 +191,14 @@ a:hover {
         width: 100%;
 }
 
+.img-inline {
+        display: inline;
+        width: 45%;
+}
+
 .credit {
+        width: 100%;
+        display: block;
         font-family: $function-font;
         color: #555;
         font-size: 0.9em;

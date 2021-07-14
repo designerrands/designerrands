@@ -151,7 +151,13 @@ nav {
 .img-in-text {
   width: 100%; }
 
+.img-inline {
+  display: inline;
+  width: 45%; }
+
 .credit {
+  width: 100%;
+  display: block;
   font-family: "Be Vietnam", sans-serif;
   color: #555;
   font-size: 0.9em; }

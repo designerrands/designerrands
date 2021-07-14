@@ -10,16 +10,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title> Chapter 3: Honesty </title>
 </head>
 
 <body>
   <img class="background-grid" src="">
 
-  <nav>
-    <a href="#"> About </a>
-    <a href="#"> See all essays </a>
-  </nav>
+  <div id="nav"></div>
+
 
   <div class="title-container">
     <div class="note-container">
@@ -167,13 +166,17 @@
 
   <div class="arrow-container">
     <a href="../02_prevention/index.html" class="arrow" id="leftArrow">
-      <p> Previous Chapter</p>
-      <img  class="arrow" src="data/arrow-left.svg">
+      <p> <- Previous Chapter</p>
+      <!-- <img  class="arrow" src="data/arrow-left.svg"> -->
     </a>
-    <a href="#" id="rightArrow" class="arrow">
-      <p> Next Chapter </p>
-      <img class="arrow" src="data/arrow-right.svg">
+    <a href="../04_cognitive-advantages/index.html" id="rightArrow" class="arrow">
+      <p> Next Chapter -> </p>
+      <!-- <img class="arrow" src="data/arrow-right.svg"> -->
     </a>
+  </div>
+
+  <div class="screen-resize">
+    Please resize your browser for a better experience
   </div>
 
   <script src="script-prevention.js"></script>

@@ -33,6 +33,9 @@
 // function hidetitle2() {
 //     title2.style.display = "none";
 // }
+$(function(){
+    $("#nav").load("../navigation.html"); 
+  });
 
 
 let iconsCol;

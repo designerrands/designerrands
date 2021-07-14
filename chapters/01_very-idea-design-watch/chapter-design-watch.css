@@ -44,6 +44,16 @@ nav a:hover {
   text-decoration: underline;
 }
 
+#home {
+    font-family: 'Lora', serif;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 800;
+    text-decoration: none;
+    position: fixed;
+    left: 20px; }
+  
+
 .title-container {
     position: relative;
 }
@@ -158,7 +168,8 @@ nav a:hover {
 .arrow p {
     /* position: absolute;
     margin: auto; */
-    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
 }
 
@@ -181,5 +192,34 @@ nav a:hover {
 #rightArrow:hover {
     transform: translate(5px,-5px);
 
+}
+
+.screen-resize {
+    display: none;
+    background-color: #ffc600;
+    z-index: 1005;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 250ms ease;
+    padding: 30%;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+@media screen and (max-width:1000px) {
+    .screen-resize {
+    display: block; 
+    width: 100vw;
+    height: 100vh;
+    }
+    .title-container {
+            display: none;
+    }
+    .main-text {
+            display: none;
+    }
+    .footer {
+            display: none;
+    }
 }
 
