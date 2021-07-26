@@ -1,45 +1,1281 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap" rel="stylesheet">
-<script src="jquery-3.6.0.min.js"></script>  
-<title> Onboarding page </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;300&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+
+    <title>Design Errands</title>
 </head>
 <body>
-  <img class="background-grid" src="data/background-grid.png">
+    <div id="nav"> </div>
 
-<nav>
-  <a href="#"> About </a>
-  <a href="#"> See all essays </a>
-</nav>
+    <div id="photo-wall">
+        <a href="chapters/02_prevention/02_handicap-steps.html">
+        <div class="photo-container" id="202-rotana"> 
+            <div class="text-container"> 
+                <p class="title"> HOW TO CREATE A HANDICAP IN 5 STEPS</p>
+                <p class="location"> Abu Dhabi, UAE </p>
+            </div>
+            <img src="photos/2.02_rotana-steps.jpeg">
+        </div>
+    </a>
 
-<div class="illus">
-  <img id="zebra" class="zebra" src="data/zebra.png">
-  <img class="chair" src="data/chair.png">
-  <img class="clock" src="data/clock.png">
-  <img class="map" src="data/map.png">
-  <img id="rad" class="rad" src="data/rad.png">
-  <img class="sign" src="data/sign.png">
-  <img class="stair" src="data/stair.png">
-</div>
+    <a href="chapters/05_toilets/04_awkward-visibility.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Predicting awkward visibility</p>
+                <p class="location">La Verna, Italy</p>
+            </div>
+            <img src="photos/5.04_awkward.png">
+        </div>
+    </a>
 
-<div class="title"> 
-  <p> Design Errands </p>
-</div>
+    <a href="chapters/05_toilets/05_interference-relevance.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Interference and relevance</p>
+                <p class="location">Paris, France</p>
+            </div>
+            <img src="photos/5.05_drinkable.jpg">
+        </div>
+    </a>
 
-<div class="instruction">
-  <p> Click the arrow below to start running some errands </p>
-  <a href="chapters/01_very-idea-design-watch/index.html"> <img id="arrow" src="data/arrow.png"> </a>
-</div>
 
 
-  <script src="script.js"></script>
+    <a href="chapters/02_prevention/04_emergency-door.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> EMERGENCY DOOR AND COMPLIANCE </p>
+                <p class="location"> Abu Dhabi, UAE </p>
+            </div>
+            <img src="photos/2.04_art-center-stairs.png">
+        </div>
+    </a>
+
+
+    <a href="chapters/02_prevention/05_wooden-totem.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> The Mangrovia Collective Wooden Totem Carbon Sink </p>
+                <p class="location"> Heidelberg, Germany </p>
+            </div>
+            <img src="photos/2.05_wooden-totem1.jpg">
+        </div>
+    </a>
+
+
+    <a href="chapters/02_prevention/06_sleep-taboo.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Sleep Taboo and Exclusive Design </p>
+                <p class="location"> Paris, France </p>
+            </div>
+            <img src="photos/2.06_sleep-taboo1.jpg">
+        </div>
+    </a>
+
+
+    <a href="chapters/02_prevention/06_sleep-taboo.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Sleep Taboo and Exclusive Design </p>
+                <p class="location"> Paris, France </p>
+            </div>
+            <img src="photos/2.06_20180312_144558.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/02_prevention/07_gender-tracker.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> The Mangrovia Collective Unobtrusive Gender Tracker </p>
+                <p class="location"> </p>
+            </div>
+            <img src="photos/2.07_tracker.png">
+        </div>
+    </a>
+
+    <a href="chapters/02_prevention/08_distraction-campaign.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Distraction can kill. Can campaigns be distracting? </p>
+                <p class="location"> Paris, France  </p>
+            </div>
+            <img src="photos/2.08_20180426_060430.jpg">
+        </div>
+    </a>
+
+
+    <a href="chapters/02_prevention/09_transparent-prevention.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Transparent Prevention </p>
+                <p class="location"> Abu Dhabi, UAE </p>
+            </div>
+            <img src="photos/2.09_glass.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/02_prevention/10_remediation.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Mind it: preventive remediation is not prevention </p>
+                <p class="location"> Dijon, France </p>
+            </div>
+            <img src="photos/2.10_DSC04138.JPG">
+        </div>
+    </a>
+
+    <a href="chapters/02_prevention/11_staircase.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> The staircase to history                 </p>
+                <p class="location"> Fiesole, Italy </p>
+            </div>
+            <img src="photos/2.11_DSC_0106.JPG">
+        </div>
+    </a>
+
+
+    <a href="chapters/03_honesty/01_manual.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Who writes operating manuals? Engineers or lawyers?               </p>
+                <p class="location"> </p>
+            </div>
+            <img src="photos/3.01_manual.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/03_honesty/02_reality-fantasy.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">  Reality check and fantasy check</p>
+                <p class="location"> Lefkada, Greece </p>
+            </div>
+            <img src="photos/3.02_20170803_143015.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/03_honesty/03_car-park-exit.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Save time and use your credit card to pay at the car park exit</p>
+                <p class="location"> Paris, France </p>
+            </div>
+            <img src="photos/#">
+        </div>
+    </a>
+
+    <a href="chapters/03_honesty/05_rad-art.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Mangrovia’s Rad-Art: White Lies should Be Legal</p>
+                <p class="location"> Paris, France </p>
+            </div>
+            <img src="photos/3.05_rad.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/03_honesty/06_gibellina.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Gibellina vs Ground Zero - memorials and epic architecture</p>
+                <p class="location"> Gibellina, Italy </p>
+            </div>
+            <img src="photos/3.06_gibellina.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/03_honesty/07_fahrenheit.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Fahrenheit Responsibility</p>
+                <p class="location">  </p>
+            </div>
+            <img src="photos/3.FC.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/03_honesty/08_easyjet.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Visual Design Optimism at Easyjet</p>
+                <p class="location"> Easyjet aircraft </p>
+            </div>
+            <img src="photos/3.08_reality.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/03_honesty/09_football-design.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">  Geometric honesty in football design</p>
+                <p class="location"> UAE </p>
+            </div>
+            <img src="photos/3.09_football.jpg">
+        </div>
+    </a>
+
+
+    <a href="chapters/03_honesty/10_logic-design.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Logic is part of design</p>
+                <p class="location"> France </p>
+            </div>
+            <img src="photos/3.10_food_label.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/03_honesty/11_logic-luxury.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Logic is a luxury we all can’t afford</p>
+                <p class="location"> Newark Express, New York, US  </p>
+            </div>
+            <img src="photos/3.11_IMG_20180830_000612.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/03_honesty/12_negative-reward.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Negative rewards for sale</p>
+                <p class="location"> Paris, France  </p>
+            </div>
+            <img src="photos/3.12_DSC04254.JPG">
+        </div>
+    </a>
+
+    <a href="chapters/03_honesty/13_tokyo-kyoto.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Kyoto or Tokyo?</p>
+                <p class="location"> </p>
+            </div>
+            <img src="photos/3.13_tokyo.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/03_honesty/14_shape-states.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> The Shape of States</p>
+                <p class="location"> New Hampshire, USA </p>
+            </div>
+            <img src="photos/3.14_state1.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/03_honesty/15_starbucks.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Starbucks and pragmatics                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/3.15_starbucks-napkin.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/03_honesty/16_three-dollars-some.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Three dollars and some </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/3.16_three-dollars.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/03_honesty/17_like-it-or-not.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Like it or not </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/3.17_DSC03035.JPG">
+        </div>
+    </a>
+
+    <a href="chapters/03_honesty/18_train-windows.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> What are train windows for, after all? </p>
+                <p class="location">Traveling on the Gotthard line on a CFF train</p>
+            </div>
+            <img src="photos/3.18_DSC03608.JPG">
+        </div>
+    </a>
+
+
+    <a href="chapters/03_honesty/19_time.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Time is up! </p>
+                <p class="location">Abu Dhabi, UAE</p>
+            </div>
+            <img src="photos/3.19_time.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/03_honesty/20_perfect-logotype.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> The (almost) perfect logotype                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/3.20_bracket1.png">
+        </div>
+    </a>
+
+    <a href="chapters/03_honesty/21_swim-150-years.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Swim well and live 150 years </p>
+                <p class="location">Naples, Italy </p>
+            </div>
+            <img src="photos/3.21_plaque.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/03_honesty/22_paper-life-cycle.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Paper life cycle is commensurate with social attention                </p>
+                <p class="location">Paris, France </p>
+            </div>
+            <img src="photos/3.22_DSC03775.JPG">
+        </div>
+    </a>
+
+    <a href="chapters/03_honesty/23_no-promises.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> No promises. Guaranteed.  </p>
+                <p class="location">Bellinzona, Switzerland </p>
+            </div>
+            <img src="photos/3.23_DSC03633.JPG">
+        </div>
+    </a>
+
+    <a href="chapters/04_cognitive-advantages/01_multiply.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Multiply your skills  </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/4.01_multiplication-table.png">
+        </div>
+    </a>
+
+
+    <a href="chapters/04_cognitive-advantages/02_arrow-ambiguities.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Arrow ambiguities</p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/4.02_arrows.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/04_cognitive-advantages/03_equilateral-triangles.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> The ambiguity of equilateral triangles </p>
+                <p class="location"> Abu Dhabi, UAE</p>
+            </div>
+            <img src="photos/#">
+        </div>
+    </a>
+
+    <a href="chapters/04_cognitive-advantages/04_relevance.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Relevance is computed, no matter what </p>
+                <p class="location"> Milan, Italy </p>
+            </div>
+            <img src="photos/4.04_20171212_110958.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/04_cognitive-advantages/05_identity-difference.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Identity and difference (AKA More is More) </p>
+                <p class="location"> Corfu, Greece </p>
+            </div>
+            <img src="photos/4.05_20170807_202818.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/04_cognitive-advantages/06_236-meters.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">236 meters from here </p>
+                <p class="location"> Abu Dhabi, UAE </p>
+            </div>
+            <img src="photos/4.06_DSC04426.JPG">
+        </div>
+    </a>
+
+    <a href="chapters/04_cognitive-advantages/07_floor-dance.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Floor dance </p>
+                <p class="location"> Abu Dhabi, UAE </p>
+            </div>
+            <img src="photos/#">
+        </div>
+    </a>
+
+    <a href="chapters/04_cognitive-advantages/08_architecture.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Architecture and Exemplarity</p>
+                <p class="location"> New York, USA</p>
+            </div>
+            <img src="photos/4.08_fith-avenue.jpeg">
+        </div>
+    </a>
+
+
+    <a href="chapters/04_cognitive-advantages/09_imperative-arrow.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">The imperative arrow</p>
+                <p class="location"> Munich, Germany</p>
+            </div>
+            <img src="photos/#">
+        </div>
+    </a>
+
+    <a href="chapters/04_cognitive-advantages/10_coexistence.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Is coexistence possible?</p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/4.10_coexistence2.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/04_cognitive-advantages/11_power-circle.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">The power of the circle</p>
+                <p class="location">Paris, France</p>
+            </div>
+            <img src="photos/4.11_circle.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/04_cognitive-advantages/12_pordenone-pointers.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Where are all these things in Pordenone?                </p>
+                <p class="location">Pordenone, Italy</p>
+            </div>
+            <img src="photos/4.12_no-pointers.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/04_cognitive-advantages/13_emergency-directions.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Directions for interpreting emergency directions                </p>
+                <p class="location">Corfu, Greece</p>
+            </div>
+            <img src="photos/4.13_20170806_134012.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/04_cognitive-advantages/14_odd-even.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Odd Even Numbers                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/4.14_speedometer.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/04_cognitive-advantages/15_physical-signage.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">The overlooked physical nature of signage </p>
+                <p class="location">Fiesole, Italy</p>
+            </div>
+            <img src="photos/4.15_DSC_0025.JPG">
+        </div>
+    </a>
+
+    <a href="chapters/04_cognitive-advantages/16_no-smoking-signs.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">No smoking signs are appearing around campus (i.e. in the cafeteria) </p>
+                <p class="location">Abu Dhabi, UAE</p>
+            </div>
+            <img src="photos/#">
+        </div>
+    </a>
+
+
+    <a href="chapters/04_cognitive-advantages/17_grass-salad.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Mind the grass, not the salad</p>
+                <p class="location">Abu Dhabi, UAE</p>
+            </div>
+            <img src="photos/4.17_desire-path.png">
+        </div>
+    </a>
+
+    <a href="chapters/05_toilets/03_nugdes-male-bathroom.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Nudges in the (male) restroom - an intractable design problem?                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/5.03_nudges.png">
+        </div>
+    </a>
+
+    <a href="chapters/05_toilets/06_same-state.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Please leave this place in the same state as you found it
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/#">
+        </div>
+    </a>
+
+    <a href="chapters/06_design-loops/01_Redundancies.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">The Mighty Power of Redundancies
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/#">
+        </div>
+    </a>
+
+    <a href="chapters/06_design-loops/02_design-inertia.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Design inertia
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/#">
+        </div>
+    </a>
+
+    <a href="chapters/06_design-loops/03_chairs-not-original.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">My Chairs Are Not Original
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/6.03_chair1.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/06_design-loops/04_designer-king.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">The designer and the King
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/#">
+        </div>
+    </a>
+
+    <a href="chapters/06_design-loops/05_doctor-in-design.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">The Doctor is InDesign
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/#">
+        </div>
+    </a>
+
+
+    <a href="chapters/06_design-loops/06_disturb-or-not.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">To disturb or not to disturb sign
+                </p>
+                <p class="location">Washington D.C, USA</p>
+            </div>
+            <img src="photos/6.06_disturb.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/06_design-loops/08_photo-shady.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">A photo shady compromise
+                </p>
+                <p class="location">New York, USA</p>
+            </div>
+            <img src="photos/6.08_shady3.jpeg">
+        </div>
+    </a>
+
+
+    <a href="chapters/06_design-loops/09_favorite-person-history.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Who is your favorite person in history? Who knows?
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/6.09_fav-person.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/06_design-loops/10_questionnaire-overload.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Questionnaire overload
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/6.10_question2.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/06_design-loops/11_bank-important.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">We are a bank: everything is important
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/6.11_bank-important.jpg">
+        </div>
+    </a>
+
+
+    <a href="chapters/06_design-loops/12_shadow-stadium.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Shadow Stadium
+                </p>
+                <p class="location"> Abu Dhabi, UAE </p>
+            </div>
+            <img src="photos/6.12_stadium1.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/06_design-loops/13_owns-time.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title"> Who owns our time?m
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/6.13_owns-time.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/06_design-loops/14_nonescalator-handrail.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">The Thought-Provoking Nonescalator Handrail
+                </p>
+                <p class="location">  </p>
+            </div>
+            <img src="photos/#">
+        </div>
+    </a>
+
+    <a href="chapters/06_design-loops/15_b1-b2.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">B1. B2. An easy fix 
+                </p>
+                <p class="location"> Abu Dhabi, UAE </p>
+            </div>
+            <img src="photos/6.16_b1b2.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/06_design-loops/16_ticket-DC.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Ticket roulette in D.C.
+                </p>
+                <p class="location"> Washington D.C, USA </p>
+            </div>
+            <img src="photos/6.15_ticket3.jpeg">
+        </div>
+    </a>
+
+
+    <a href="chapters/06_design-loops/17_rome-comic-sans.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Rome welcomes you. In Comic Sans.
+                </p>
+                <p class="location"> Rome, Italy </p>
+            </div>
+            <img src="photos/6.17_rome-comic.jpeg">
+        </div>
+    </a>
+
+
+
+    <a href="chapters/06_design-loops/18_road-signs-rome.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Road Signs in Rome
+                </p>
+                <p class="location"> Rome, Italy </p>
+            </div>
+            <img src="photos/6.18-rome-sign2.jpeg">
+        </div>
+    </a>
+
+
+
+    <a href="chapters/06_design-loops/19_icon-capture.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Icon capture
+                </p>
+                <p class="location"> Paris, France </p>
+            </div>
+            <img src="photos/6.19_icon-capture.jpeg">
+        </div>
+    </a>
+
+
+    <a href="chapters/06_design-loops/20_creativity-iconicity.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Creativity in iconicity
+                </p>
+                <p class="location"> Paris, France </p>
+            </div>
+            <img src="photos/6.20_creative-icon.jpg">
+        </div>
+    </a>
+
+
+    <a href="chapters/06_design-loops/21_end-iconicity.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">The End of Iconicity
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/6.21_end-icon3.png">
+        </div>
+    </a>
+
+    <a href="chapters/06_design-loops/22_sleeves-logic.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Sleeves and logic
+                </p>
+                <p class="location"> Bastia, France </p>
+            </div>
+            <img src="photos/6.22_sleeves.jpg">
+        </div>
+    </a>
+
+
+    <a href="chapters/06_design-loops/23_orly-eleven.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Orly’s Eleven
+                </p>
+                <p class="location"> Paris, France </p>
+            </div>
+            <img src="photos/6.23_orly.jpeg">
+        </div>
+    </a>
+
+
+    <a href="chapters/06_design-loops/24_good-intentions-wolf.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Good intentions are wolf intentions
+                </p>
+                <p class="location"> Paris, France </p>
+            </div>
+            <img src="photos/#">
+        </div>
+    </a>
+
+    <a href="chapters/06_design-loops/25_sign-omission.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Si(g)n of omission
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/#">
+        </div>
+    </a>
+
+    <a href="chapters/07_low-tech/01_screens-not-forever.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Screens aren’t forever
+                </p>
+                <p class="location">Bordeaux, France</p>
+            </div>
+            <img src="photos/7.01_DSC03978.JPG">
+        </div>
+    </a>
+
+    <a href="chapters/07_low-tech/02_people-not-forever.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">People aren’t forever (yet)
+                </p>
+                <p class="location">Paris, France</p>
+            </div>
+            <img src="photos/7.02_DSC03340.JPG">
+        </div>
+    </a>
+
+    <a href="chapters/07_low-tech/03_humans-back.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Are humans back?
+                </p>
+                <p class="location">Paris, France</p>
+            </div>
+            <img src="photos/7.03_DSC03058.JPG">
+        </div>
+    </a>
+
+    <a href="chapters/07_low-tech/04_intercom-problem.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Quick fix of intercom problem: back to a transition technology
+                </p>
+                <p class="location">Paris, France</p>
+            </div>
+            <img src="photos/7.04_20171215_113707.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/07_low-tech/05_powerpoint-karaoke.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Powerpoint Karaoke
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/#">
+        </div>
+    </a>
+
+    <a href="chapters/07_low-tech/07_eyelid-privacy.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">The Mangrovia Collective Eyelid Privacy Protector
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/7.07_eyelid.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/01_op-art-stairs.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Op-art stairs
+                </p>
+                <p class="location">European Airport</p>
+            </div>
+            <img src="photos/8.01_DSC04170.JPG">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/02_good-sense-atm.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Good Sense at the ATM
+                </p>
+                <p class="location">Milan, Italy</p>
+            </div>
+            <img src="photos/8.02_atm2.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/03_space-perspective.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Putting space in perspective
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/#">
+        </div>
+    </a>
+
+
+    <a href="chapters/08_affordance/04_driving-left.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">A proposal for the ecology of driving on the left
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/8.04_drive-left2.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/05_mind-your-head.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">(Never)mind your head
+                </p>
+                <p class="location">Abu Dhabi, UAE</p>
+            </div>
+            <img src="photos/8.05_mind-head.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/06_alien-crossing.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Alien Crossing
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/8.06_alien-crossing.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/07_perspective-shift.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Perspectival Shift at La Maison de Radio France
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/#">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/08_ephemeral-design.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Ephemeral design and counteraffordance
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/8.08_ephemeral-design.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/09_speed-bump-paris.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Speed bump madness in Paris
+                </p>
+                <p class="location">Paris, France</p>
+            </div>
+            <img src="photos/8.09_speed-bump3.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/10_collateral-affordance.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Collateral affordances
+                </p>
+                <p class="location">Montreal, Canada</p>
+            </div>
+            <img src="photos/8.10_collateral-affordances2.png">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/11_shrinking-whopper.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">The incredibly shrinking whopper
+                </p>
+                <p class="location">Paris, France</p>
+            </div>
+            <img src="photos/8.11_20180329_122415.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/12_size-neglected.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Is size a neglected factor in design?
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/8.12_size-neglect2.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/13_size-scale.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Size matters and so does scale
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/8.13_size-scale.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/14_bins-buses-bus-stops.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">On bins, benches, and bus stops in Rome
+                </p>
+                <p class="location">Rome, Italy</p>
+            </div>
+            <img src="photos/8.14_bins-rome.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/15_surrealism.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Surrealism: the last resource against user-centered design
+                </p>
+                <p class="location">Abu Dhabi, UAE</p>
+            </div>
+            <img src="photos/8.15_surreal1.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/16_zebra-herd-crossing.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Zebra herd crossing
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/8.16_zebra.png">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/17_taxi-lyon.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">If you miss your bus-bus in Lyly-onon: get a tata-xixi! 
+                </p>
+                <p class="location">Lyon, France</p>
+            </div>
+            <img src="photos/8.17_tataxixi.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/18_self-perspective-bin.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Self-perspectival recycle bins 
+                </p>
+                <p class="location">Pianello del Lario, Italy</p>
+            </div>
+            <img src="photos/8.18_20180802_142307.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/19_red-window.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">“In case of an emergency, look for the red window”
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/8.19_red-window.jpeg">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/20_iconicity-shower.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Iconicity in the shower
+                </p>
+                <p class="location">Abu Dhabi, UAE</p>
+            </div>
+            <img src="photos/8.20_shower.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/08_affordance/21_movement-affordance.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">People’s movement is in itself an affordance
+                </p>
+                <p class="location">Paris, France</p>
+            </div>
+            <img src="photos/8.21_20180816_125601.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/09_disorientation/01_city-maps.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Innovation in city maps
+                </p>
+                <p class="location">London, UK</p>
+            </div>
+            <img src="photos/9.01_DSC03821.JPG">
+        </div>
+    </a>
+
+    <a href="chapters/09_disorientation/02_nyuad-hidden-maps.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">On the maps at NYU Abu Dhabi campus: the hidden maps
+                </p>
+                <p class="location">Abu Dhabi, UAE</p>
+            </div>
+            <img src="photos/9.02_hidden-map.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/09_disorientation/03_nyuad-disoriented-maps.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">On the maps at NYU Abu Dhabi campus: the disoriented maps
+                </p>
+                <p class="location">Abu Dhabi, UAE</p>
+            </div>
+            <img src="photos/9.03_disoriented-map.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/09_disorientation/04_nyuad-next-maps">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">On the maps at NYU Abu Dhabi campus: the next maps
+                </p>
+                <p class="location">Abu Dhabi, UAE</p>
+            </div>
+            <img src="photos/9.04_next-map.png">
+        </div>
+    </a>
+
+    <a href="chapters/09_disorientation/05_semantics-looking-down.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">The semantics of looking down
+                </p>
+                <p class="location">Paris, France</p>
+            </div>
+            <img src="photos/9.05_looking-down.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/09_disorientation/06_getting-back.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Another way of getting back where you already are
+                </p>
+                <p class="location">Paris, France</p>
+            </div>
+            <img src="photos/9.06_getting-back.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/09_disorientation/07_getting-lost.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">On not getting lost before ever starting to travel
+                </p>
+                <p class="location">Rome, Italy </p>
+            </div>
+            <img src="photos/9.07_getting-lost2.png">
+        </div>
+    </a>
+
+    <a href="chapters/09_disorientation/08_name-place.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">The name of the place
+                </p>
+                <p class="location">Paris, France</p>
+            </div>
+            <img src="photos/9.08_20170817_170032.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/10_post-design/01_narrow-field-vision.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">A narrow field of vision (and of action)
+                </p>
+                <p class="location">Paris, France</p>
+            </div>
+            <img src="photos/10.01_vision.JPG">
+        </div>
+    </a>
+
+    <a href="chapters/10_post-design/02_reappropriation.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Reappropriation is the name of the game
+                </p>
+                <p class="location">Paris, France</p>
+            </div>
+            <img src="photos/10.02_20180409_190100.jpg">
+        </div>
+    </a>
+
+    <a href="chapters/10_post-design/03_kinds-of-design.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Kinds of design
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/#">
+        </div>
+    </a>
+
+    <a href="chapters/10_post-design/04_super-duper-design.html">
+        <div class="photo-container" > 
+            <div class="text-container"> 
+                <p class="title">Super-duper design
+                </p>
+                <p class="location"></p>
+            </div>
+            <img src="photos/#">
+        </div>
+    </a>
+
+
+    </div>
+
+    <div id="report">
+        <div id="track">
+        <a href="report-errand.html" id="report-text">REPORT YOUR ERRANDS</a>
+    </div>
+    </div>
+
+
+    <script src="script-index.js"></script>
 </body>
 </html>

@@ -16,54 +16,106 @@
       rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>236 meters from here</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Please leave this place in the same state as you found it</title>
+    <style>
+      .user {
+        margin-left: -100px;
+        width: 80%;
+      }
+      .management {
+        color: #2a5dcb;
+        margin-left: 200px;
+        width: 80%;
+
+      }
+    </style>
   </head>
   <body>
     <div id="nav"></div>
 
     <div id="title-container" class="title-container">
-      <p class="title">236 meters from here</p>
+      <p class="title">Please leave this place in the same state as you found it</p>
       <a href="index.html" class="chapter">
-        Chapter 4: Cognitive advantages (aka no other theory is as powerful)
+        Chapter 5: Toilets
       </a>
       <div class="icon-container"><img src="data/6.svg" class="icon" /></div>
     </div>
 
     <div class="main-text">
-      <img class="img-in-text" src="#" />
-      <span class="credit">Abu Dhabi, Apr 21, 215. Image credit: RC.</span>
-      <p>
-        Restrooms are 236 meters from the sign. Not one meter more, not one
-        less. How farther away is the restaurant? Look, then calculate:
-        365m-236m=129m. And the policeman? He is 628m from here (but the
-        direction he intimates is not the one we are prepared to go. He seems
-        authoritative, though). Ah, looking more carefully, it looks as if the
-        Management office, the Mosque and the Policeman are all at the same
-        distance – presumably in the same compound? That would have been good to
-        know beforehand.
+      <p class="user">
+        Dear Communication Department,
+        <br />
+        I would like to point out a small problem with the sign posted in the
+        bathrooms of our company. The sign reads
+      </p>
+      <h2 class="notice">Please leave this place in the same state as you found it</h2>
+
+      <p class="user">
+        Of course, this invitation could work in the case, not necessarily the
+        most likely, where the bathrooms are found in excellent condition, ie
+        clean. If one finds them dirty, as unfortunately often happens, the
+        invitation is counterproductive. <br />Very cordially, ...
       </p>
 
-      <p>
-        There are two types of costs involved in this interesting
-        representation. The first we just presented: precise information is good
-        (true, honest) but it may be difficult to assess, to compare and may
-        hide patterns (such as the identical distance of Management, Police and
-        Mosque. Well, it is so unlikely they are equidistant from here? Do the
-        three offices coincide in space?)
+      <br /><br />
+      <p class="user">
+        Dear Communication Department,
+        <br />
+        I am very impressed by the speed with which you reacted to my message
+        last week by changing the sign in the bathrooms. The change certainly
+        solves the problem I raised. However, the new message is just as
+        problematic as the previous one:
+      </p>
+      <h2 class="notice">
+        Please leave this place in the state in which you would like it to be.
+      </h2>
+
+      <p class="user">
+        The invitation only works if there are no spiteful or self-injuring
+        users. For a user who wants to live in the dirt (and it seems that there
+        is no lack of it) the sign could have unpleasant effects for other
+        users. <br />Very cordially, ...
       </p>
 
-      <p>
-        The second cost is related to the omnipresence of our relevance daemon
-        inside. Typically, and reasonably, distances are provided in
-        approximations
-        <a href="../03_honesty/07_fahrenheit.html"
-          >(see also Fahrenheint Responsibility)</a>. There must be a reason, the daemon surmises, for them being expressed
-        in precise quantities. Suppose I told you, commenting upon skiing
-        results, that three Italians were among the first ten. You do not
-        thereby have an idea of the precise result of any of them. But suppose I
-        tell you that three Italians were among the first eleven. Then you are
-        entitled to at least prima facie conclude that one of them was the
-        eleventh. Precision generates expectations and questions.
+      <br /><br />
+      <p class="user">
+        Dear Communication Department,
+        <br />
+        I’m still writing to you after the new changes to the sign posted in the bathrooms of the company. Now it is very clear, of course, and without the ambiguities of the previous signs: 
+
+      </p>
+      <h2 class="notice">
+        Please leave this place clean.
+
+      </h2>
+
+      <p class="user">
+        But don’t you think that users now feel a bit subject to a request that goes beyond simply omitting uncivilized behavior? That is, you would say that they are asked not only not to dirty where it is clean, but also to clean where it is dirty.
+        <br />Very cordially, ...
+      </p>
+
+      <br /><br />
+      <p class="management">
+        Dear user,
+        <br />
+        This is company management. Thank you for your feedback. We have closed the Communication Department, also because by now its only task had become to draw up signs for the bathrooms. However, we decided to launch a major competition among our customers, in search of the perfect message to stimulate virtuous behavior in that important and delicate environment.
+      </p>
+
+<br><br>
+      <p class="user">
+        Dear Management,
+        <br />
+        At this point I would say that the purpose of the cartels was not so much to improve the behavior of users recalcitrant to education, but to express the resentment and helplessness of others. If you think that it would be good for them to leave a message, then perhaps it is better to install blackboards on which everyone can express everything they think.
+
+      </p>
+
+      <br><br>
+      <p class="user">
+        Dear Management,
+        <br />
+        I noticed the new blackboards that had been on the company’s bathroom for a few days. Excellent initiative, I congratulate the management. However, I notice that the markers hanging on the cords have already disappeared and that some nice guy had fun disgusting the boards with obscene writings and drawings using indelible markers. I would ask all users to refrain from such jokes and to politely <i>leave the boards in the same state in which they found them.</i> <br>Thank you.
+
       </p>
     </div>
 
@@ -88,6 +140,14 @@
     <div class="screen-resize">
       Please resize your browser for a better experience
     </div>
+    <script>
+      ScrollReveal().reveal('.user',{ delay: 500 });
+      ScrollReveal().reveal('h2',{ delay: 500 });
+      ScrollReveal().reveal('.management',{ delay: 500 });
+
+
+
+    </script>
     <script src="../essay-script.js"></script>
   </body>
 </html>

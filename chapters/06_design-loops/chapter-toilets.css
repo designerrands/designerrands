@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    background-color: #008c81;
+}
+
+img { 
+    -webkit-user-drag: none; 
+    -khtml-user-drag: none; 
+    -moz-user-drag: none; 
+    -o-user-drag: none; 
+    /* user-drag: none;  */
+  }
+
+
+.background-grid {
+    position: fixed;
+    width: 2000px;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: -1000;
+}
+
+#nav { 
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    font-family: 'Be Vietnam', sans-serif;
+    padding-right: 2%;
+    padding-top: 1%;
+    z-index: 1000;
+}
+
+#nav a {
+    color:black;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#nav a:hover {
+  text-decoration: underline;
+}
+
+#home {
+    font-family: 'Lora', serif;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 800;
+    text-decoration: none;
+    position: fixed;
+    left: 20px; }
+  
+
+.title-container {
+    position: relative;
+}
+
+#note {
+    position: relative;
+    top: 60px;
+    left: 30px;
+    width: 25%;
+}
+
+.note-container {
+    position: relative;
+}
+
+.note-container p {
+    position: absolute;
+    width: 20%;
+    top: 30%;
+    left: 6%;
+    font-family: 'Lora', serif;
+    color: #ffc600;
+    font-size: 2vw;
+
+}
+
+.icon-container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top:0;
+    overflow: hidden;
+}
+
+.icon-container a {
+    text-decoration: none;
+    color:black;
+}
+
+.background-container {
+    position: relative;
+    top:-5%;
+    left:0%;
+    overflow: hidden;
+
+}
+
+#background {
+    position: relative;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    z-index: -1000;
+}
+
+.icon {
+    width: 60%;
+    height: auto;
+    filter: drop-shadow(3px 3px 1px rgba(24, 24, 24, 0.5))
+}
+
+.icon:hover {
+    transform: translate(-5px,-5px);
+    transition: 300ms;
+    transition-timing-function: ease-out;
+}
+
+.essay-title {
+    font-family: 'Be Vietnam', sans-serif;
+    min-width: 200px;
+    padding: 5%;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: absolute;
+    display: none;
+    z-index: 1010;
+}
+
+#essay1 {
+    position:absolute;
+    width: 8%;
+    top: 21%;
+    left:34%;
+}
+
+/* #essay-title1 {
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 100px;
+} */
+
+#essay2 {
+    position:absolute;
+    width: 8%;
+    top: 25%;
+    left:55%;
+}
+
+#essay3 {
+    position:absolute;
+    width: 8%;
+    top: 32%;
+    left: 39%;
+}
+
+
+#essay4 {
+    position:absolute;
+    width: 8%;
+    top: 39%;
+    left: 53%;
+}
+
+#essay5 {
+    position:absolute;
+    width: 8%;
+    top: 45%;
+    left: 33%;
+}
+
+#essay6 {
+    position:absolute;
+    width: 8%;
+    top: 45%;
+    left: 60%;
+
+}
+
+
+
+.arrow:hover {
+    filter: drop-shadow(5px, 5px, 2px, #333);
+    transition: 300ms;
+    transition-timing-function: ease-out;
+}
+
+.arrow {
+    position: relative;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 1.2em;
+    color: #ee5637;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.arrow img {
+    filter: invert(1);
+    padding: 10px;
+}
+
+.arrow p {
+    /* position: absolute;
+    margin: auto; */
+    margin: 0;
+    text-align: center;
+}
+
+#leftArrow {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#leftArrow:hover {
+    transform: translate(-5px,-5px);
+}
+
+#rightArrow {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#rightArrow:hover {
+    transform: translate(5px,-5px);
+
+}
+
+
+.screen-resize {
+    display: none;
+    background-color: #008c81;
+    z-index: 1005;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 250ms ease;
+    padding: 30%;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+@media screen and (max-width:1000px) {
+    .screen-resize {
+    display: block; 
+    width: 100vw;
+    height: 100vh;
+    }
+    .title-container {
+            display: none;
+    }
+    .main-text {
+            display: none;
+    }
+    .footer {
+            display: none;
+    }
+}
