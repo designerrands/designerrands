@@ -43,7 +43,7 @@ ul {
     color: black; }
 
 #twitter-mention-button:hover {
-  background-color: #ff00e1; }
+  background-color: red; }
 
 .twitter-timeline-container {
   height: 100vh;
