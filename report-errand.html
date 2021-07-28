@@ -1,6 +1,58 @@
-<body>
-<div id="report">
-    <div id="track">
-    <a href="" id="report-text">REPORT YOUR ERRANDS</a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/report.css" />
+    <link rel="stylesheet" href="stylesheets/nav.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;300&family=Libre+Baskerville:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Design Errands</title>
+  </head>
+  <body>
+    <div id="nav"></div>
+
+    <div class="twitter-container">
+
+    <div class="twitter-share-container">
+        <h2 class="title">
+            Instructions to report your design errands 
+        </h2>
+        <p class="prompts">
+            Upload a photo of your design observation and share it with us. You will contribute to a database of design errands all around the world.  
+            <br><br>
+            Some prompts to think about for that 250 characters: 
+            <ul>
+                <li>How would an alien describe this?</li>
+                <li>What would a sensible designer do in this case?</li>
+                <li>If you can invent anything that can solve this problem, what would it be?</li>
+                <li>Imagine the kind of mishaps this can cause. Tell a story from it. </li>
+            </ul>
+        </p>
+        <button id="twitter-mention-button"><a href="https://twitter.com/intent/tweet?screen_name=designerrands&ref_src=twsrc%5Etfw">Report errand</a></button>
+    </div>
+
+
+    <div class="twitter-timeline-container">
+        <a class="twitter-timeline" href="https://twitter.com/DesignErrands">Tweets by Design Errands</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
 </div>
-</body>
+
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+
+    <script src="script-report.js"></script>
+  </body>
+</html>

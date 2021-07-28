@@ -4,7 +4,7 @@ $(function(){
     $("#nav").load("../nav.html"); 
     $('head').append('<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;300&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">    ');
     $('head').append('<link rel="stylesheet" href="../../stylesheets/nav.css"/>');
-    $('head').append('<link rel="stylesheet" href="../../stylesheets/report.css"/>');
+    $('head').append('<link rel="stylesheet" href="../../stylesheets/report-footer.css"/>');
     $('body').append('<div id="report"><div id="track"><a href="../../report-errand.html" id="report-text">REPORT YOUR ERRANDS</a></div>');
   });
 

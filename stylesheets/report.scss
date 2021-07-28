@@ -3,33 +3,74 @@ $text-font : 'Libre Baskerville', serif;
 $highlight-color: rgb(255, 0, 225);
 
 
-#report {
-    position: fixed;
-    bottom: 0;
+body {
+    margin:0
+}
+
+h2 {
     font-family: $title-font;
-    background-color: white;
-    color: black;
+    text-transform: uppercase;
     font-weight: 200;
-    font-size: 2em;
-    width: 100vw;
-    height:5vh;
-    text-align: center;
-    border-top: 2px solid black;
-    transition: ease-in-out 200ms;
-    text-overflow: nowrap;
-    overflow: hidden;
+    font-size: 3em;
 }
 
-#report-text {
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    color: black;
+.twitter-container {
+    position: relative;
+    // top: 12vh;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 }
 
-#report:hover {
+
+
+
+
+.twitter-share-container {
+    padding: 5%;
+    padding-top: 15%;
+    position: -webkit-sticky; /* Safari */
+}
+.prompts {
+    font-family: $text-font;
+    font-size: 20px;
+    line-height: 29px;
+
+   
+}
+
+ul {
+    font-family: $text-font;
+    font-size: 20px;
+    line-height: 29px;
+
+}
+#twitter-mention-button {
+    margin-top: 20px;
+    padding: 20px;
+    font-family: $title-font;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 2.5em;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 50px;
+    transition: ease-in 200ms;
+
+    a{
+        color: black
+    }
+}
+
+#twitter-mention-button:hover{
     background-color: $highlight-color;
+
 }
-#track {
-    width: 100vw;
+
+
+
+.twitter-timeline-container {
+    height: 100vh;
+    overflow:scroll;
+    padding: 5%;
+    padding-top: 15%;
 }

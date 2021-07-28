@@ -85,5 +85,17 @@ body {
     transform: translateX(-100%); }
   100% {
     transform: translateX(-200%); } }
+@media screen and (max-width: 1000px) {
+  .block-container {
+    display: grid;
+    grid-template-columns: 1fr; }
+
+  .essay-block {
+    width: auto;
+    height: auto; }
+
+  .body-text {
+    font-size: 20px;
+    line-height: 29px; } }
 
 /*# sourceMappingURL=style-principles.css.map */
