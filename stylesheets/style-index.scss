@@ -1,58 +1,64 @@
+
 $title-font : 'Gothic A1', sans-serif;
 $text-font : 'Libre Baskerville', serif;
+$highlight-color: rgb(255, 0, 225);
+
 
 
 body {
     margin: 0;
 }
 
-nav {
-    position: fixed;
-    width: 100vw;
-    height: 12vh; 
-    border-bottom: 2px solid black;
-    z-index: 1000;
-}
+// nav {
+//     position: fixed;
+//     width: 100vw;
+//     height: 12vh; 
+//     border-bottom: 2px solid black;
+//     z-index: 1000;
+// }
 
-a {
-    text-decoration: none;
+// a {
+//     text-decoration: none;
     
-}
+// }
 
-#home {
-    position: absolute;
-    font-family: $title-font;
-    color: black;
-    font-weight: 200;
-    font-size: 5vw;
-    width: 100vw;
-    text-align: center;
-    margin: auto;
-    transition: ease-in 200ms;
-}
+// #home {
+//     position: absolute;
+//     font-family: $title-font;
+//     color: black;
+//     font-weight: 200;
+//     font-size: 5vw;
+//     width: 100vw;
+//     text-align: center;
+//     margin: auto;
+//     transition: ease-in 200ms;
+// }
 
-#home:hover {
-    color: rgb(255, 0, 225);
+// #home:hover {
+//     color: rgb(255, 0, 225);
 
-}
+// }
 
-.side-links {
-    position: absolute;
-    font-family: $text-font;
-    font-style: italic;
-    color: black;
-    font-size: 1.5em;
-}
+// .side-links {
+//     position: absolute;
+//     font-family: $text-font;
+//     font-style: italic;
+//     color: black;
+//     font-size: 1.5em;
+// }
 
-#about {
-    top: 30%;
-    left: 10%;
-}
+// #about {
+//     top: 30%;
+//     left: 10%;
+// }
 
-#principles {
-    top: 30%;
-    right: 10%;
-}
+// #principles {
+//     top: 30%;
+//     right: 10%;
+// }
+
+
+
 
 
 #report {
@@ -84,7 +90,7 @@ a {
 // }
 
 #report:hover {
-    background-color: rgb(255, 0, 225);
+    background-color: $highlight-color;
 }
 
 
@@ -105,9 +111,9 @@ a {
 
 #photo-wall {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-auto-rows: 400px;
-
+    // repeat(4,25%);
 
 }
 
@@ -134,7 +140,7 @@ a {
     width: 100%;
     height: 100%;
     background-color: rgb(255,0,255);
-    color: white;
+    color: black ;
 
     transition: ease 200ms;
 }
@@ -156,4 +162,9 @@ a {
     margin:0;
     padding: 2%;
     font-family: $text-font;
+}
+
+@media screen and (max-width:1000px) {
+    #report {
+font-size: 3em;    }
 }

@@ -7,11 +7,6 @@ let randomMarginRight;
 let randomMarginTop; 
 let randomMarginBtm;
 
-// randomNumber = Math.floor(Math.random()*50);
-// console.log(randomNumber);
-
-// $( ".photo-container" ).css({"marginLeft" : randomNumber })
-
 
 $( ".photo-container" ).each(function() {
   randomMarginLeft = Math.floor(Math.random()*100);
@@ -26,12 +21,12 @@ $( ".photo-container" ).each(function() {
 });
 
 
-let colors=[ "#ff1e00", "#ff00cc", "#0040ff", "#00e32a"];
+let colors=[ "#FA00FF", "#2D80FC", "#AA2AFE", "#FD0100", "#FD8130", "#FFFD05", "#02DA12"];
 let randomColor; 
 titleContainer = document.getElementById("title-container");
 
 $( ".text-container" ).each(function(){
-  randomColor = colors[Math.floor(Math.random() * 4)];
+  randomColor = colors[Math.floor(Math.random() * 7)];
   $(this).css({"backgroundColor": randomColor })
 })
   

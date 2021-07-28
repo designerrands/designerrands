@@ -1,6 +1,6 @@
 
-$function-font:    'Gothic A1', sans-serif;
-$text-font: 'Libre Baskerville', serif;
+$function-font:    'Be Vietnam', sans-serif;
+$text-font: 'Lora', serif;
 
 img { 
         -webkit-user-drag: none; 
@@ -11,6 +11,7 @@ img {
 
 body {
     margin: 0;
+    background-color: #fff6ed;
     font-family: $text-font;
 
 }
@@ -23,6 +24,7 @@ a {
 h2 {
         font-family: $text-font;
         font-weight: 700;  
+        margin-left: -10%;
 }
 
 h3 {
@@ -35,7 +37,30 @@ strong {
         font-weight: 700;
 }
 
+nav { 
+        display: flex;
+        position: fixed;
+        justify-content: flex-end;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        font-family: 'Be Vietnam', sans-serif;
+        padding-right: 2%;
+        padding-top: 1%;
+        z-index: 1000;
+ a {
+        color:black;
+        font-size: 1.2em;
+        text-decoration: none;
+        margin-left: 20px;
+        margin-right: 20px;
+}
 
+a:hover {
+        text-decoration: underline;
+   }
+
+}
 
 .button {
         
@@ -57,40 +82,43 @@ strong {
       }
 
 
-
+    
+#home {
+    font-family: 'Lora', serif;
+    color:black;
+    font-size: 1.2em;
+    font-weight: 800;
+    text-decoration: none;
+    position: fixed;
+    left: 20px;
+}
 
 .title-container {
         position: relative;
+        display: grid;
+        height: 50vh;
         padding: 2%;
-        top: 20px;
-        // display: grid;
-        // height: 50vh;
-        // grid-template-columns: 3fr 1fr; 
-        // grid-template-rows: 4fr 1fr; 
-        // border-bottom: 5px solid;
-
+        grid-template-columns: 3fr 1fr; 
+        grid-template-rows: 4fr 1fr; 
+        border-bottom: 5px solid;
 }
       
 .title {
-        // grid-area: 1 / 1 / 2 / 2; 
-        margin-top: 7%;
+        grid-area: 1 / 1 / 2 / 2; 
         width: 100%;
+        font-weight: 400;
         font-size: 400%;
-        font-family: $function-font;
-        text-transform: uppercase;
-        font-weight: 100;
+        font-family: 'Lora', serif;
       }
       
 .icon-container {
-        // grid-area: 1 / 2 / 3 / 3;
-        display:none;
+        grid-area: 1 / 2 / 3 / 3;
         position: relative;
         width: 85%;
         padding-top: 10%;
       }
       
 .icon {
-        display:none;
         width: 100%;
         position: absolute;
         bottom: 0%;
@@ -98,7 +126,6 @@ strong {
       }
 
 .chapter {
-        display: none;
         color: black;
         text-decoration: none;
         font-family: $function-font;
@@ -115,13 +142,14 @@ strong {
 
 
 .main-text {
+        margin-top: 5%;        
         margin-bottom: 5%;
-        margin-left: 2%;
-        margin-right: 50%;
+        margin-left: 30%;
+        margin-right: 30%;
       }
       
 .main-text p {
-    font-family: $text-font;
+    font-family: 'Lora', serif;
     font-size: 20px;
     line-height: 29px;
 }
@@ -153,8 +181,8 @@ strong {
         font-family: $function-font;
         font-size: 0.8em;
         position: absolute;
-        left: 53%;
-        background-color: #fff;
+        left: 73%;
+        background-color: #fff6ed;
         color: #ee5637;
         
 }
@@ -201,28 +229,31 @@ strong {
 
 .footer {
         position: relative;
-        bottom: 5vh;
         display: flex;
-       font-family: $function-font;
+       font-family: 'Be Vietnam', sans-serif;
        a {        
         width: 50%;
         height: 15vh;
         padding: 20px;
         transition: 250ms; 
         text-decoration: none;
+        color: #fff6ed;
 }
-
+        a:hover {
+        background-color: #2a5dcb;
+        color: #fff6ed;
+}
 
         .footer-title-next {
                 width:60%;
-                font-family: $function-font;
+                font-family: $text-font;
                 font-size: 1.5em;
         }
 
 
         .footer-title-prev {
                 margin-left: 30%;
-                font-family: $function-font;
+                font-family: $text-font;
                 font-size: 1.5em;
         }
 
@@ -232,15 +263,12 @@ strong {
         border-bottom: 1px solid black;
         border-right: 1px solid black;
         text-align: right;
-        text-transform: uppercase;
 }
 
 #next {
         position: relative;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
-        text-transform: uppercase;
-
 }
 
         .footer-arrow {
@@ -264,40 +292,33 @@ strong {
 
 }
 
+
+
 .screen-resize {
-        display:none;
+        display: none;
+        background-color: #fff6ed;
+        z-index: 1005;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 250ms ease;
+        padding: 30%;
+        font-family: $function-font;
 }
 
 @media screen and (max-width:1000px) {
+        .screen-resize {
+        display: block; 
+        width: 100vw;
+        height: 100vh;
+        }
         .title-container {
-                top: 100px;
-                margin-left:3%;
-                font-size: 3vw;
+                display: none;
         }
         .main-text {
-                margin-top:10%;
-                margin-left:5%;
-                margin-right:5%;
+                display: none;
         }
-
-        .footer {        
-                flex-wrap: wrap;
-                margin-top: 100px;
-                a {
-                height: 15vh;
-                width: 100%;
-                }
+        .footer {
+                display: none;
         }
-
-        .footer-title-next {
-                width:100%;
-
-        }
-
-
-        .footer-title-prev {
-                margin-left: 10%;
-
-        }
-        
 }

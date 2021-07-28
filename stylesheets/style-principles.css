@@ -1,0 +1,89 @@
+body {
+  margin: 0; }
+
+.block-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); }
+
+.essay-block {
+  height: 88vh;
+  margin-top: 12vh;
+  border: 1px solid black;
+  overflow: scroll; }
+
+.text-block {
+  padding: 3%;
+  font-size: 2em; }
+
+.title {
+  margin: 0;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 2em;
+  font-weight: 200;
+  text-transform: uppercase; }
+
+.body-text {
+  font-family: "Libre Baskerville", serif;
+  font-size: 0.7em;
+  line-height: 36px; }
+
+.blue-box {
+  color: #0000e1;
+  text-decoration: underline; }
+
+.org-box {
+  color: #ff4400;
+  text-decoration: underline; }
+
+.box-text {
+  display: block;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1em;
+  line-height: 36px;
+  padding: 2%;
+  border-radius: 10px;
+  border: 2px solid #0000e1; }
+
+#report {
+  position: fixed;
+  bottom: 0;
+  font-family: "Gothic A1", sans-serif;
+  background-color: white;
+  color: black;
+  font-weight: 200;
+  font-size: 2em;
+  width: 100vw;
+  height: 5vh;
+  text-align: center;
+  border-top: 2px solid black;
+  transition: ease-in-out 200ms;
+  text-overflow: nowrap;
+  overflow: hidden; }
+
+#report-text {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  color: black; }
+
+#report:hover {
+  background-color: #ff00e1; }
+
+#track {
+  width: 100vw; }
+
+#track :hover {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: runningtext 10s linear infinite; }
+
+@keyframes runningtext {
+  0% {
+    transform: translateX(0%); }
+  50% {
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(-200%); } }
+
+/*# sourceMappingURL=style-principles.css.map */

@@ -1,0 +1,57 @@
+nav {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  width: 100vw;
+  height: 12vh;
+  border-bottom: 2px solid black;
+  z-index: 1000; }
+
+a {
+  text-decoration: none; }
+
+#home {
+  flex-basis: 50%;
+  font-family: "Gothic A1", sans-serif;
+  color: black;
+  font-weight: 200;
+  font-size: 5vw;
+  text-align: center;
+  margin: auto;
+  transition: ease-in 200ms; }
+
+#home:hover {
+  color: #ff00e1; }
+
+.side-links {
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  color: black;
+  font-size: 1.5em;
+  display: block;
+  text-align: center;
+  padding: 1%;
+  transition: ease-in 200ms; }
+
+.side-links:hover {
+  color: #ff00e1; }
+
+.left-side {
+  flex-basis: 20%; }
+
+.right-side {
+  flex-basis: 20%; }
+
+#about {
+  top: 30%;
+  left: 10%; }
+
+#principles {
+  top: 30%;
+  right: 10%; }
+
+@media screen and (max-width: 1000px) {
+  .side-links {
+    font-size: 1.3em; } }
+
+/*# sourceMappingURL=nav.css.map */

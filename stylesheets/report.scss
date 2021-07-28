@@ -1,0 +1,35 @@
+$title-font : 'Gothic A1', sans-serif;
+$text-font : 'Libre Baskerville', serif;
+$highlight-color: rgb(255, 0, 225);
+
+
+#report {
+    position: fixed;
+    bottom: 0;
+    font-family: $title-font;
+    background-color: white;
+    color: black;
+    font-weight: 200;
+    font-size: 2em;
+    width: 100vw;
+    height:5vh;
+    text-align: center;
+    border-top: 2px solid black;
+    transition: ease-in-out 200ms;
+    text-overflow: nowrap;
+    overflow: hidden;
+}
+
+#report-text {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    color: black;
+}
+
+#report:hover {
+    background-color: $highlight-color;
+}
+#track {
+    width: 100vw;
+}

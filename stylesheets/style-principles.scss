@@ -1,0 +1,108 @@
+$title-font : 'Gothic A1', sans-serif;
+$text-font : 'Libre Baskerville', serif;
+$highlight-color: rgb(255, 0, 225);
+
+body {
+    margin: 0;
+}
+
+.block-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+.essay-block {
+    height: 88vh;
+    // width: 50%;
+    margin-top: 12vh;
+    border: 1px solid black;
+    overflow: scroll;
+}
+
+.text-block {
+    padding: 3%;
+    font-size: 2em;
+}
+
+.title {
+    margin: 0;
+    font-family: $title-font;
+    font-size: 2em;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.body-text {
+    font-family: $text-font;
+    font-size: 0.7em;
+    line-height: 36px;
+    // font-weight: 200;
+}
+
+.blue-box {
+    color:rgb(0, 0, 225);
+    text-decoration: underline;
+}
+
+
+.org-box{
+    color:rgb(255, 68, 0);
+    text-decoration: underline;
+}
+
+.box-text {
+    display: block;
+    // width: 80%;
+
+    font-family: $text-font;
+    font-size: 1em;
+    line-height: 36px;
+    padding: 2%;
+    border-radius: 10px;    
+    border:2px solid rgb(0, 0, 225)
+}
+
+#report {
+    position: fixed;
+    bottom: 0;
+    font-family: $title-font;
+    background-color: white;
+    color: black;
+    font-weight: 200;
+    font-size: 2em;
+    width: 100vw;
+    height:5vh;
+    text-align: center;
+    border-top: 2px solid black;
+    transition: ease-in-out 200ms;
+    text-overflow: nowrap;
+    overflow: hidden;
+}
+
+#report-text {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    color: black;
+}
+
+#report:hover {
+    background-color: $highlight-color;
+}
+#track {
+    width: 100vw;
+}
+
+#track :hover{
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: runningtext 10s linear infinite;
+  }
+
+  @keyframes runningtext {
+    0%   {transform: translateX(0%)};
+    50% {transform: translateX(-100%)};
+    100% {transform: translateX(-200%)};
+
+}

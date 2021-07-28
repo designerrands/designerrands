@@ -1,0 +1,83 @@
+$title-font : 'Gothic A1', sans-serif;
+$text-font : 'Libre Baskerville', serif;
+$highlight-color: rgb(255, 0, 225);
+
+
+nav {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    width: 100vw;
+    height: 12vh; 
+    border-bottom: 2px solid black;
+    z-index: 1000;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+#home {
+    // position: absolute;
+    flex-basis: 50%;
+    font-family: $title-font;
+    color: black;
+    font-weight: 200;
+    font-size: 5vw;
+    // width: 100vw;
+    text-align: center;
+    margin: auto;
+    transition: ease-in 200ms;
+}
+
+#home:hover {
+    color: $highlight-color;
+
+}
+
+.side-links {
+    // position: absolute;
+    font-family: $text-font;
+    font-style: italic;
+    color: black;
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+    padding: 1%;
+    transition: ease-in 200ms;
+
+
+}
+.side-links:hover{
+    color:$highlight-color;
+
+}
+
+
+.left-side {
+    flex-basis: 20%;
+}
+
+.right-side {
+    flex-basis: 20%;
+}
+
+
+#about {
+    top: 30%;
+    left: 10%;
+}
+
+#principles {
+    top: 30%;
+    right: 10%;
+}
+
+
+@media screen and (max-width:1000px) {
+    .side-links{
+        font-size:1.3em;
+    }
+    
+}

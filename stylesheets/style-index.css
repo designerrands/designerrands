@@ -1,45 +1,6 @@
 body {
   margin: 0; }
 
-nav {
-  position: fixed;
-  width: 100vw;
-  height: 12vh;
-  border-bottom: 2px solid black;
-  z-index: 1000; }
-
-a {
-  text-decoration: none; }
-
-#home {
-  position: absolute;
-  font-family: "Gothic A1", sans-serif;
-  color: black;
-  font-weight: 200;
-  font-size: 5vw;
-  width: 100vw;
-  text-align: center;
-  margin: auto;
-  transition: ease-in 200ms; }
-
-#home:hover {
-  color: #ff00e1; }
-
-.side-links {
-  position: absolute;
-  font-family: "Libre Baskerville", serif;
-  font-style: italic;
-  color: black;
-  font-size: 1.5em; }
-
-#about {
-  top: 30%;
-  left: 10%; }
-
-#principles {
-  top: 30%;
-  right: 10%; }
-
 #report {
   position: fixed;
   bottom: 0;
@@ -79,7 +40,7 @@ a {
     transform: translateX(-200%); } }
 #photo-wall {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-auto-rows: 400px; }
 
 .photo-container {
@@ -103,7 +64,7 @@ a {
   width: 100%;
   height: 100%;
   background-color: magenta;
-  color: white;
+  color: black;
   transition: ease 200ms; }
 
 .text-container:hover {
@@ -121,5 +82,9 @@ a {
   margin: 0;
   padding: 2%;
   font-family: "Libre Baskerville", serif; }
+
+@media screen and (max-width: 1000px) {
+  #report {
+    font-size: 3em; } }
 
 /*# sourceMappingURL=style-index.css.map */

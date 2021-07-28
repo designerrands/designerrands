@@ -1,5 +1,11 @@
+
+
 $(function(){
-    $("#nav").load("../navigation.html"); 
+    $("#nav").load("../nav.html"); 
+    $('head').append('<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;300&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">    ');
+    $('head').append('<link rel="stylesheet" href="../../stylesheets/nav.css"/>');
+    $('head').append('<link rel="stylesheet" href="../../stylesheets/report.css"/>');
+    $('body').append('<div id="report"><div id="track"><a href="../../report-errand.html" id="report-text">REPORT YOUR ERRANDS</a></div>');
   });
 
 
@@ -9,7 +15,7 @@ let footerBoxnext;
 let arrowRight;
 
 let titleContainer;
-let colors=[ "#2a5dcb", "#ee5637", "#f85299", "#008c81"];
+let colors=[ "#FA00FF", "#2D80FC", "#AA2AFE", "#FD0100", "#FD8130", "#FFFD05", "#02DA12"];
 let randomColor; 
 
 footerBoxprev = document.getElementById("prev");
@@ -26,7 +32,7 @@ footerBoxnext.addEventListener('mouseleave',unchangeArrowNext);
 
 titleContainer = document.getElementById("title-container");
 randomColor = colors[Math.floor(Math.random() * 4)];
-titleContainer.style.borderColor = randomColor;
+// titleContainer.style.borderColor = randomColor;
 
 
 function changeArrowPrev() {
@@ -35,7 +41,7 @@ function changeArrowPrev() {
 }
 function unchangeArrowPrev() {
     arrowLeft.style.filter = "invert(0)";
-    footerBoxprev.style.backgroundColor = "#fff6ed"
+    footerBoxprev.style.backgroundColor = "#fff"
 }
 
 
@@ -46,7 +52,7 @@ function changeArrowNext() {
 }
 function unchangeArrowNext() {
     arrowRight.style.filter = "invert(0)";
-    footerBoxnext.style.backgroundColor = "#fff6ed"
+    footerBoxnext.style.backgroundColor = "#fff"
 }
 
     var mouseXpos;
