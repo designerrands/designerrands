@@ -134,7 +134,6 @@ strong {
         font-family: $text-font;
         font-size: 1em;
         line-height: 27px;
-        margin-left: -10%;
         padding: 2%;
         border-radius: 10px;
 }
@@ -211,8 +210,6 @@ strong {
         transition: 250ms; 
         text-decoration: none;
 }
-
-
         .footer-title-next {
                 width:60%;
                 font-family: $function-font;
@@ -287,17 +284,17 @@ strong {
                 height: 15vh;
                 width: 100%;
                 }
-        }
+
 
         .footer-title-next {
                 width:100%;
-
         }
-
 
         .footer-title-prev {
-                margin-left: 10%;
-
+                margin-left: 0;
+                width:100%;
         }
+        }
+
         
 }
