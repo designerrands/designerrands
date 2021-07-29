@@ -277,10 +277,29 @@ strong {
                 margin-right:5%;
         }
 
+        .cite {
+                text-decoration: underline;
+               }
+               
+               
+        .ref {
+                opacity: 1 ;
+                transition: 200ms ease;        
+                border: 0px;
+                padding: 0;
+                font-family: $function-font;
+                font-size: 1em;
+                position: relative;
+                left: 0;
+                background-color: rgba(255, 255, 255, 0);
+                color: #757575;
+        }
+
         .footer {        
                 flex-wrap: wrap;
                 margin-top: 100px;
                 a {
+              
                 height: 15vh;
                 width: 100%;
                 }
@@ -288,11 +307,13 @@ strong {
 
         .footer-title-next {
                 width:100%;
+                font-size: 1.3em ;
         }
 
         .footer-title-prev {
                 margin-left: 0;
                 width:100%;
+                font-size: 1.3em ;
         }
         }
 
