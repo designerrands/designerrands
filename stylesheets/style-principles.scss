@@ -20,6 +20,7 @@ a {
     // width: 50%;
     margin-top: 12vh;
     border: 1px solid black;
+    border-top: 0;
     overflow: scroll;
 }
 
@@ -93,23 +94,23 @@ a {
 #report:hover {
     background-color: $highlight-color;
 }
-#track {
-    width: 100vw;
-}
+// #track {
+//     width: 100vw;
+// }
 
-#track :hover{
-    position: absolute;
-    white-space: nowrap;
-    will-change: transform;
-    animation: runningtext 10s linear infinite;
-  }
+// #track :hover{
+//     position: absolute;
+//     white-space: nowrap;
+//     will-change: transform;
+//     animation: runningtext 10s linear infinite;
+//   }
 
-  @keyframes runningtext {
-    0%   {transform: translateX(0%)};
-    50% {transform: translateX(-100%)};
-    100% {transform: translateX(-200%)};
+//   @keyframes runningtext {
+//     0%   {transform: translateX(-100%)};
+//     50% {transform: translateX(-200%)};
+//     100% {transform: translateX(-100%)};
 
-}
+// }
 
 @media screen and (max-width:1000px) {
     .block-container {

@@ -38,7 +38,7 @@ report = document.getElementById("report");
 track = document.getElementById("track");
 reportText = document.getElementById("report-text");
 
-report.onmouseover = function () {
+track.onmouseover = function () {
   reportText.innerHTML =
     "REPORT YOUR ERRANDS * REPORT YOUR ERRANDS * REPORT YOUR ERRANDS * REPORT YOUR ERRANDS * REPORT YOUR ERRANDS *";
 };

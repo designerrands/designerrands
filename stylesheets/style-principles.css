@@ -12,6 +12,7 @@ a {
   height: 88vh;
   margin-top: 12vh;
   border: 1px solid black;
+  border-top: 0;
   overflow: scroll; }
 
 .text-block {
@@ -72,22 +73,6 @@ a {
 #report:hover {
   background-color: #ff00e1; }
 
-#track {
-  width: 100vw; }
-
-#track :hover {
-  position: absolute;
-  white-space: nowrap;
-  will-change: transform;
-  animation: runningtext 10s linear infinite; }
-
-@keyframes runningtext {
-  0% {
-    transform: translateX(0%); }
-  50% {
-    transform: translateX(-100%); }
-  100% {
-    transform: translateX(-200%); } }
 @media screen and (max-width: 1000px) {
   .block-container {
     display: grid;

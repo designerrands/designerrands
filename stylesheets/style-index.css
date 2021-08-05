@@ -25,6 +25,9 @@ body {
 #report:hover {
   background-color: #ff00e1; }
 
+#track {
+  width: 100vw; }
+
 #track :hover {
   position: absolute;
   white-space: nowrap;
@@ -33,11 +36,11 @@ body {
 
 @keyframes runningtext {
   0% {
-    transform: translateX(0%); }
-  50% {
     transform: translateX(-100%); }
+  50% {
+    transform: translateX(-200%); }
   100% {
-    transform: translateX(-200%); } }
+    transform: translateX(-100%); } }
 #photo-wall {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -85,6 +88,7 @@ body {
 
 @media screen and (max-width: 1000px) {
   #report {
-    font-size: 3em; } }
+    background-color: #ff00e1;
+    font-size: 2em; } }
 
 /*# sourceMappingURL=style-index.css.map */

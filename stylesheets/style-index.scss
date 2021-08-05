@@ -92,6 +92,9 @@ body {
     background-color: $highlight-color;
 }
 
+#track {
+    width: 100vw;
+}
 
 #track :hover{
     position: absolute;
@@ -102,9 +105,9 @@ body {
   }
   
 @keyframes runningtext {
-    0%   {transform: translateX(0%)};
-    50% {transform: translateX(-100%)};
-    100% {transform: translateX(-200%)};
+    0%   {transform: translateX(-100%)};
+    50% {transform: translateX(-200%)};
+    100% {transform: translateX(-100%)};
 
 }
 
@@ -165,5 +168,6 @@ body {
 
 @media screen and (max-width:1000px) {
     #report {
-font-size: 3em;    }
+        background-color: $highlight-color;
+font-size: 2em;    }
 }

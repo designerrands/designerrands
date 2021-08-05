@@ -51,4 +51,11 @@ ul {
   padding: 5%;
   padding-top: 15%; }
 
+@media screen and (max-width: 1000px) {
+  .twitter-share-container {
+    width: 90vw; }
+
+  .twitter-timeline-container {
+    width: 90vw; } }
+
 /*# sourceMappingURL=report.css.map */

@@ -52,6 +52,9 @@ a {
 
 @media screen and (max-width: 1000px) {
   .side-links {
-    font-size: 1.3em; } }
+    font-size: 1.3em; }
+
+  #home {
+    font-weight: 300; } }
 
 /*# sourceMappingURL=nav.css.map */
